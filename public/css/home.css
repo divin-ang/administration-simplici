@@ -1,0 +1,22 @@
+
+.afficher{
+    
+    margin-left: 3%;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+   
+
+}
+.item{
+    margin-bottom: 2%;
+}
+.item a{
+    text-decoration: none;
+}
+.modifier{
+    margin-left: 7%;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
