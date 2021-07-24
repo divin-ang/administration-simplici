@@ -41,8 +41,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    public function sendPasswordResetNotification()
+    public function sendPasswordResetNotification($token)
 {
-    $this->notify(new PasswordReset());
+    $this->notify(new PasswordReset($token));
 }
 }
