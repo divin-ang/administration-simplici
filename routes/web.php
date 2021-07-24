@@ -43,6 +43,6 @@ Route::post('/sous-categorie/supprimer/{id}', [App\Http\Controllers\Subcontainer
 Route::get('/sous-categorie/supprimer/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/administration', [App\Http\Controllers\AdministrationController::class, 'get'])->middleware('roles:admin');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('roles:admin');
-Route::get('password/reset/', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
+
 Route::post('password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset.token');
 
