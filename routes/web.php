@@ -44,6 +44,8 @@ Route::get('/sous-categorie/supprimer/{id}/{containerId}', [App\Http\Controllers
 Route::get('/administration', [App\Http\Controllers\AdministrationController::class, 'get'])->middleware('roles:admin');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('roles:admin');
 Route::get('/utilisateurs', [App\Http\Controllers\UserController::class, 'index'])->name('utilisateurs')->middleware('roles:admin');
+Route::get('/utilisateur/modifier', [App\Http\Controllers\UserController::class, 'updateForm'])->name('utilisateurModifier')->middleware('roles:admin');
+Route::get('/utilisateur/supprimer', [App\Http\Controllers\UserController::class, 'index'])->name('utilisateurSupprimer')->middleware('roles:admin');
 //Route::get('/utilisateurs', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
 //Route::post('/password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset.token');
 
