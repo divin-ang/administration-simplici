@@ -12,6 +12,11 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public function __construct($token) {
+        $this->token = $token;
+       }
+
+
     /**
      * The attributes that are mass assignable.
      *
