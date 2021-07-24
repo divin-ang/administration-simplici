@@ -110,7 +110,7 @@ class ProcessController extends Controller
         ->get();
         
         $subcontainerName = DB::table('subcontainer')
-        ->where('subcontainer_id', 59)  
+        ->where('subcontainer_id', $subcontainerId)  
         ->get();
         return redirect()->route('demarches', ['id' => $subcontainerId,'name'=>$subcontainerName[0]->subcontainer_name]);
 
