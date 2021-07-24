@@ -112,16 +112,16 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id,$containerId)
+    public function destroy($id)
     {
         //
-        DB::table('subcontainer')
-        ->where('subcontainer_id',$id)
+        DB::table('users')
+        ->where('id',$id)
         ->delete();
 
-        $Souscategories = DB::table('subcontainer')
-        ->where('subcontainer.container_id', $containerId)
+        $users = DB::table('users')
+       
         ->get();
-        return view('admin/categorie',['sousCategory'=>$Souscategories]);
+        return view('user/afficher',['users'=>$users]);
     }
 }
