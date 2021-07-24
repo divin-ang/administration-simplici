@@ -108,8 +108,13 @@ class ProcessController extends Controller
         ->select('processes.*')
 
         ->get();
+        
+        $subcontainerName = DB::table('subcontainer')
+        ->where('subcontainer_id', 59)  
+        ->get();
+        return redirect()->route('demarches', ['id' => $subcontainerId,'name'=>$subcontainerName[0]->subcontainer_name]);
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId]);
+        //return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId]);
      
     }
 

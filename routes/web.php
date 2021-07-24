@@ -26,8 +26,8 @@ Route::post('/categorie/modifier/{id}', [App\Http\Controllers\ContainerControlle
 
 Route::get('/categorie/{id}/{name}', [App\Http\Controllers\AdministrationController::class, 'getCategory'])->middleware('roles:admin');
 Route::get('/categorie/changer/{id}/{name}', [App\Http\Controllers\ContainerController::class, 'show'])->middleware('roles:admin');
-Route::get('/demarches/{id}/{name}', [App\Http\Controllers\AdministrationController::class, 'getDemarches'])->middleware('roles:admin');
-Route::get('/demarche/modifier/{id}/{name}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'updateForm'])->middleware('roles:admin');
+Route::get('/demarches/{id}/{name}', [App\Http\Controllers\AdministrationController::class, 'getDemarches'])->middleware('roles:admin')->name('demarches');
+Route::get('/demarche/modifier/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'updateForm'])->middleware('roles:admin');
 Route::post('/demarche/modifier/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'update'])->middleware('roles:admin');
 Route::get('/demarche/creer/{id}', [App\Http\Controllers\ProcessController::class, 'storeForm'])->middleware('roles:admin');
 Route::post('/demarche/creer/{id}', [App\Http\Controllers\ProcessController::class, 'store'])->middleware('roles:admin');
@@ -43,4 +43,4 @@ Route::post('/sous-categorie/supprimer/{id}', [App\Http\Controllers\Subcontainer
 Route::get('/sous-categorie/supprimer/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/administration', [App\Http\Controllers\AdministrationController::class, 'get'])->middleware('roles:admin');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('roles:admin');
-Route::view('/admin', 'admin');
+
