@@ -41,4 +41,5 @@ class AdministrationController extends Controller
         return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id]);
         
     }
+    
 }

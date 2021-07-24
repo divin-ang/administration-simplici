@@ -39,8 +39,16 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+
+                           <li>  
+                            <a class="dropdown-item" href="{{ route('getuser') }}">
+                                   Gerer les utilisateurs    
+                             </a>
+                                    
+                                    </li>
                             <!-- Authentication Links -->
                            <li class="nav-item dropdown">
+                                
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Hi There <span class="caret"></span>
                                 </a>
