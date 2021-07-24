@@ -19,7 +19,7 @@ class UserController extends Controller
         $users =DB::table('users')
         ->get();
 
-        return view('afficher',['users'=>$users]);
+        return view('user/afficher',['users'=>$users]);
     }
 
     /**
