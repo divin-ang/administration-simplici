@@ -48,8 +48,9 @@ class PasswordReset extends Notification
                     ->greeting('Bonjour')
                     ->line('Vous recevez ce message car nous avons reçu une demande de recupération pour votre compte')
                     ->action('Recuperer le mot de passe', url(config('app.url').route('password.reset.token', $this->token, false)))
-                    ->line('Vous n\'avez pas demandé une récupération, Aucune action n\'est nécessaire')
-                    ->salutation('Cordialement \n \n Simplici+');
+                    ->line('Vous n\'avez pas demandé une récupération, aucune action n\'est nécessaire de votre part.')
+                    ->salutation('Cordialement')
+                    ->line('Simplici+');
     }
 
     /**
