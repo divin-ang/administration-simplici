@@ -53,7 +53,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                  <a class="dropdown-item" href="{{ route('getuser') }}">
+                                  <a class="dropdown-item" href="{{ route('utilisateurs') }}">
                                    Gerer les utilisateurs    
                              </a>
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
