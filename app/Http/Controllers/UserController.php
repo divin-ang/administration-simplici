@@ -100,10 +100,10 @@ class UserController extends Controller
     public function updateForm(Request $request, $id)
     {
         //
-        $subcontainer =DB::table('subcontainer')
-        ->where('subcontainer_id',$id)
+        $users=DB::table('users')
+        ->where('id',$id)
         ->get();
-        return view("sousCategories/modifier",['subcontainer'=>$subcontainer[0]]);
+        return view("user/modifier",['user'=>$users[0]]);
     }
   
     /**
