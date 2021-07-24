@@ -43,18 +43,12 @@ class UserController extends Controller
     {
         //
 
-        DB::table('subcontainer')
-        ->updateOrInsert(['subcontainer_name'=>$request->nom,'container_id'=>$id]);
-        $Souscategories = DB::table('subcontainer')
-        ->where('subcontainer.container_id', $id)
-        ->get();
-        return view('admin/categorie',['sousCategory'=>$Souscategories]);
     }
 
     public function storeForm($id)
     {
         //
-        return view('sousCategories/creer',['containerId'=>$id]);
+      
 
     }
 
@@ -88,18 +82,18 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id, $containerId)
+    public function update(Request $request, $id)
     {
         //
-        DB::table('subcontainer')
-        ->where('subcontainer_id', $id)  
+        DB::table('users')
+        ->where('id', $id)  
        
-        ->update(array('subcontainer_name' => $request->nom));  // update the record in the DB. 
+        ->update(array('name' => $request->nom,'role'=>$request->role,'email'=>$request->email));  // update the record in the DB. 
         
-        $Souscategories = DB::table('subcontainer')
-        ->where('subcontainer.container_id', $containerId)
+        $users = DB::table('users')
+        
         ->get();
-        return view('admin/categorie',['sousCategory'=>$Souscategories]);
+        return view('user/afficher',['users'=>$users]);
      
     }
 

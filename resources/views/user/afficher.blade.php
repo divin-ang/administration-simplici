@@ -4,7 +4,7 @@
 <div class="container">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/user.css') }}" >
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Les utilisateurs') }}</div>
 
@@ -19,13 +19,11 @@
                 </div>
                 <div>
                  <div>
-                 @php 
-                 $i = 1
-                 @endphp
+               
 
                  @foreach($users as $user)
                      <div class='row'>
-                     <span>  {{$user->name}}</span>
+                     <span class="col">  {{$user->name}}</span>
                      <a href="{{ url('utilisateur/modifier/'.$user->id.'/'.$user->name) }}" class="col modifier">modifier les autorisations</a>
                      <a href="{{ url('utlisateur/supprimer/'.$user->id.'/'.$user->name) }}" class="col supprimer">supprimer l'utilisateur</a>
                  </div>
