@@ -41,9 +41,7 @@
                         <ul class="navbar-nav ml-auto">
 
                            <li>  
-                            <a class="dropdown-item" href="{{ route('getuser') }}">
-                                   Gerer les utilisateurs    
-                             </a>
+              
                                     
                                     </li>
                             <!-- Authentication Links -->
