@@ -45,7 +45,7 @@ Route::get('/administration', [App\Http\Controllers\AdministrationController::cl
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('roles:admin');
 Route::get('/utilisateurs', [App\Http\Controllers\UserController::class, 'index'])->name('utilisateurs')->middleware('roles:admin');
 Route::get('/utilisateur/modifier/{id}', [App\Http\Controllers\UserController::class, 'updateForm'])->name('utilisateurModifier')->middleware('roles:admin');
-Route::get('/utilisateur/supprimer/{id}', [App\Http\Controllers\UserController::class, 'detroy'])->name('utilisateurSupprimer')->middleware('roles:admin');
+Route::get('/utilisateur/supprimer/{id}', [App\Http\Controllers\UserController::class, 'destroy'])->name('utilisateurSupprimer')->middleware('roles:admin');
 Route::post('/utilisateur/modifier/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('utilisateurAipdate')->middleware('roles:admin');
 //Route::get('/utilisateurs', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
 //Route::post('/password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset.token');
