@@ -16,7 +16,9 @@ class UserController extends Controller
     public function index()
     {
         //
+        $userId = Auth::id();
         $users =DB::table('users')
+        ->where('id','!=',$userId)
         ->get();
 
         return view('user/afficher',['users'=>$users]);
