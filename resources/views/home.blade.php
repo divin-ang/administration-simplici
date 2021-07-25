@@ -6,7 +6,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Liste des catégories') }}</div>
+                <div class="card-header">{{ __('Liste des catégories') }}   </a>
+                                              <a class="dropdown-item" href="{{ route('getuser') }}">
+                                   Gerer les utilisateurs    
+                             </a></div>
 
                 <div class="card-body">
                     @if (session('status'))
