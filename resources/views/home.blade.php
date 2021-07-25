@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Liste des catégories') }}   </a>
-                                              <a class="dropdown-item" href="{{ route('getuser') }}">
+                                              <a class="dropdown-item" href="{{ route('utilisateurs') }}">
                                    Gerer les utilisateurs    
                              </a></div>
 
