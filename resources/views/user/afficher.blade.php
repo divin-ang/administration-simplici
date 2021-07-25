@@ -25,7 +25,7 @@
                      <div class='row'>
                      <span class="col">  {{$user->name}}</span>
                      <a href="{{ url('utilisateur/modifier/'.$user->id) }}" class="col modifier">modifier les autorisations</a>
-                     <a href="{{ url('utlisateur/supprimer/'.$user->id) }}" class="col supprimer">supprimer l'utilisateur</a>
+                     <a href="{{ url('utilisateur/supprimer/'.$user->id) }}" class="col supprimer">supprimer l'utilisateur</a>
                  </div>
                      @endforeach
                  
