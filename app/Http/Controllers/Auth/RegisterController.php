@@ -31,7 +31,7 @@ class RegisterController extends Controller
      * @var string
      */
     
-    use AuthenticatesUsers;
+   
     protected function redirectTo()
 { 
     
