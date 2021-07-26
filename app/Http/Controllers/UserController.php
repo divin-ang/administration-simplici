@@ -95,8 +95,9 @@ class UserController extends Controller
        
         ->update(array('name' => $request->nom,'role'=>$request->role,'email'=>$request->email));  // update the record in the DB. 
         
-        $users = DB::table('users')
-        
+        $userId = Auth::id();
+        $users =DB::table('users')
+        ->where('id','!=',$userId)
         ->get();
         return view('user/afficher',['users'=>$users]);
      
@@ -124,8 +125,9 @@ class UserController extends Controller
         ->where('id',$id)
         ->delete();
 
-        $users = DB::table('users')
-       
+        $userId = Auth::id();
+        $users =DB::table('users')
+        ->where('id','!=',$userId)
         ->get();
         return view('user/afficher',['users'=>$users]);
     }
