@@ -32,19 +32,18 @@ class RegisterController extends Controller
      */
     
     use AuthenticatesUsers;
-    protected function authenticated()
-{ 
-    
+
 
     if(\Auth::user()->role=='user'){
-       return redirect()->route('attente') ;
+        protected $redirectTo = RouteServiceProvider::ATTENTE; 
+ 
     }elseif(\Auth::user()->role=='admin'){
-        return redirect()->route('home') ;
+        protected $redirectTo = RouteServiceProvider::HOME; 
     }   
 
-}
+
     
-   // protected $redirectTo = RouteServiceProvider::HOME;
+
 
     /**
      * Create a new controller instance.
