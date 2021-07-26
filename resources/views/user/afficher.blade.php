@@ -15,14 +15,14 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('') }}
                 </div>
                 <div>
                  <div>
                
 
                  @foreach($users as $user)
-                     <div class='row'>
+                     <div class='row item'>
                      <span class="col">  {{$user->name}}</span>
                      <a href="{{ url('utilisateur/modifier/'.$user->id) }}" class="col modifier">modifier les autorisations</a>
                      <a href="{{ url('utilisateur/supprimer/'.$user->id) }}" class="col supprimer">supprimer l'utilisateur</a>
