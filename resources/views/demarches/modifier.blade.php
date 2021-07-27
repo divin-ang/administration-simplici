@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Se connecter') }}</div>
+                <div class="card-header">{{ __('') }}</div>
 
                 <div class="card-body">
                    
@@ -105,18 +105,18 @@
 
 
 
-
-
-         </div>
-         
-         
-         <div class="form-group row mb-0">
+          <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Enregistrer') }}
                                 </button>
                             </div>
          </div>
+
+         </div>
+         
+         
+        
          
          </div>
         
