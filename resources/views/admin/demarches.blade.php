@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/sousCategorie.css') }}" >
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('Liste des démarches') }}</div>
 
@@ -22,13 +22,14 @@
                
 
                  <div class="item">
-                  <a href="{{ url('demarche/creer/'.$subcontainerId) }}" class="ajouter">Ajouter une nouvelle démarche</a></div>
+                  <a href="{{ url('demarche/creer/'.$subcontainerId) }}" class="ajouter">Créer une nouvelle démarche</a>
+                  <a href="{{ url('demarche/ajouter/'.$subcontainerId) }}" class="ajouter">Ajouter une  démarche existante à cette sous catégorie</a></div>
 
                  @foreach($demarches as $demarche)
                    
                    
                       <div class="item row">
-                        <span class="name col-7">  {{$demarche->process_name}}</span>
+                        <span class="name col-9">  {{$demarche->process_name}}</span>
                     <a href="{{ url('demarche/modifier/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col modifier">Modifier</a>
                      <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col supprimer">Supprimer</a>
                     </div>

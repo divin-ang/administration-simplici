@@ -72,7 +72,39 @@ class ProcessController extends Controller
     {
         //
     }
+public function addForm($subcontainerId){
+    $processes = DB::table('subcontainer')
+        ->where('subcontainer.subcontainer_id' ,'!=',$subcontainerId)
+        ->join('subcontainer_process', 'subcontainer_process.subcontainer_id', '!=', 'subcontainer.subcontainer_id')
+        
+        ->join('processes', 'processes.process_id', '=', 'subcontainer_process.process_id')
+        
+        ->select('processes.*')
 
+        ->get();
+
+    return view('demarches/ajouter',['demarches'=>$processes,'subcontainer_id'=>$subcontainerId]);
+}
+public function add(Request $request, $subcontainerId){
+
+    //$processId = DB::table('processes')->insertGetId(['process_name'=>$request->nom,'process_link'=>$request->link,'process_draft_mode'=>$request->draft_mode,'provider_id'=>$request->providerId,'process_duration'=>$request->duration]);
+    $processId=$request->process_id; 
+        DB::table('subcontainer_process')
+        ->Insert(['process_id'=>$processId,'subcontainer_id'=>$subcontainerId]);
+        $processes = DB::table('subcontainer')
+        ->where('subcontainer.subcontainer_id' ,'=',$subcontainerId)
+        ->join('subcontainer_process', 'subcontainer_process.subcontainer_id', '=', 'subcontainer.subcontainer_id')
+        
+        ->join('processes', 'processes.process_id', '=', 'subcontainer_process.process_id')
+        
+        ->select('processes.*')
+
+        ->get();
+
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id]);
+
+
+}
     /**
      * Show the form for editing the specified resource.
      *
@@ -139,7 +171,7 @@ class ProcessController extends Controller
     public function destroy($id,$subcontainerId)
     {
         //
-        DB::table('processes')
+        DB::table('subcontainer_process')
         ->where('process_id',$id)
         ->delete();
 

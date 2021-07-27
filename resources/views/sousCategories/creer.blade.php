@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Se connecter') }}</div>
+                <div class="card-header">{{ __('Créer une sous catégorie') }}</div>
 
                 <div class="card-body">
                    
