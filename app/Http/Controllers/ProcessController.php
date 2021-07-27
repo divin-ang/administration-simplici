@@ -96,7 +96,7 @@ public function add(Request $request, $subcontainerId){
 
         ->get();
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainer_id'=>$subcontainerId]);
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId]);
 
 
 }
