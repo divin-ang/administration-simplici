@@ -73,13 +73,8 @@ class ProcessController extends Controller
         //
     }
 public function addForm($subcontainerId){
-    $processes = DB::table('subcontainer')
-        ->where('subcontainer.subcontainer_id' ,'!=',$subcontainerId)
-        ->join('subcontainer_process', 'subcontainer_process.subcontainer_id', '!=', 'subcontainer.subcontainer_id')
+    $processes = DB::table('processes')
         
-        ->join('processes', 'processes.process_id', '=', 'subcontainer_process.process_id')
-        
-        ->select('processes.*')
 
         ->get();
 
