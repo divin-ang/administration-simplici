@@ -4,11 +4,11 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-11">
             <div class="card">
             
                              
-                             <a href="{{ url('/utilisateurs') }}" class="">Gérer les utilisateurs</a></div>
+                             <a href="{{ url('/utilisateurs') }}" class="user_link">Gérer les utilisateurs</a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -21,9 +21,7 @@
                 </div>
                 <div>
                  <div>
-                 @php 
-                 $i = 1
-                 @endphp
+               
 
                  @foreach($categories as $categorie)
                      <div class='row item'>
