@@ -13,6 +13,10 @@
 }
 .user_link{
     font-size: 2.6vh;
+    margin-right: 5%;
+}
+div .user_link{
+    text-decoration: none;
 }
 .item{
     margin-bottom: 2%;

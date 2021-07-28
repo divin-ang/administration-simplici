@@ -13,7 +13,7 @@
          <form  action="{{url('demarche/creer/'.$subcontainerId.'/')  }}" method="POST">
          @csrf
          <div class="form-group row">
-         <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
+         <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }} *</label>
          <div class="col-md-6">
           <input type='text' class="form-control"  name="nom" required />
           </div>
@@ -47,13 +47,13 @@
 
 
           <div class="form-group row">
-                <label for="draft_mode " class="col-md-4 col-form-label text-md-right">{{ __('Origine de la démarche') }}</label>
+                <label for="provider " class="col-md-4 col-form-label text-md-right">{{ __('Origine de la démarche') }} *</label>
            
            <div class="col-md-6">
                  <select class="form-control "  name="providerId" required >
 
                       @foreach($providers as $provider)
-                        <option value="{!!$provider->provider_id !!}">{{$provider->provider_proposed_by}}</option>
+                        <option value="{!!$provider->provider_id !!}">{{$provider->provider_proposed_by.' '}}   {{$provider->provider_service}} </option>
                        
                       @endforeach
              </select>
@@ -71,9 +71,9 @@
 
 
            <div class="form-group row">
-         <label for="link" class="col-md-4 col-form-label text-md-right">{{ __('Url') }}</label>
+         <label for="link" class="col-md-4 col-form-label text-md-right">{{ __('Url') }} *</label>
          <div class="col-md-6">
-          <input type='text' class="form-control"  name="link" required />
+          <input type='text' class="form-control"  placeholder=" exemple: https://simplici.chambery.fr/" name="link" required />
           
           
           </div>

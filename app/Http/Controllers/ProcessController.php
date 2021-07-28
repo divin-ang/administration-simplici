@@ -15,6 +15,10 @@ class ProcessController extends Controller
     public function index()
     {
         //
+        $demarches =DB::table('processes')
+        ->get();
+
+        return view('/demarches/demarches',['demarches'=>$demarches]);
     }
 
     /**
@@ -163,6 +167,17 @@ public function add(Request $request, $subcontainerId){
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function destroyEvryWhere($id){
+        DB::table('processes')
+        ->where('process_id',$id)
+        ->delete();
+        $demarches =DB::table('processes')
+        ->get();
+
+        return view('/demarches/demarches',['demarches'=>$demarches]);
+
+
+    }
     public function destroy($id,$subcontainerId)
     {
         //

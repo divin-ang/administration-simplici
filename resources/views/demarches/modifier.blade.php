@@ -47,13 +47,13 @@
 
 
         <div class="form-group row">
-                <label for="providerId" class="col-md-4 col-form-label text-md-right">{{ __('posibilité de réprendre') }}</label>
+                <label for="providerId" class="col-md-4 col-form-label text-md-right">{{ __('Origine') }}</label>
            
            <div class="col-md-6">
                  <select class="form-control " value='{!!$process->process_draft_mode !!}' name="providerId" required >
 
                       @foreach($providers as $provider)
-                        <option value="{!! $provider->provider_id !!}">{{$provider->provider_proposed_by}}</option>
+                        <option value="{!! $provider->provider_id !!}">{{$provider->provider_proposed_by}} {{$provider->provider_service}}</option>
                        
                 @endforeach
              </select>
