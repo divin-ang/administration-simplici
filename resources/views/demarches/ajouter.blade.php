@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Ajouter une démarche existante dans cette sous catégorie') }}</div>
+                <div class="card-header">{{ __('Ajouter une démarche existante dans ') }} : {{$subcontainer_name}}</div>
 
                 <div class="card-body">
                    

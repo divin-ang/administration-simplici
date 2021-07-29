@@ -37,13 +37,13 @@ class ProcessController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function storeForm($id)
+    public function storeForm($id,$name)
     {
         //
         $providers =DB::table('providers')
         ->distinct()
         ->get();
-        return view('demarches/creer',['subcontainerId'=>$id,'providers'=>$providers]);
+        return view('demarches/creer',['subcontainerId'=>$id,'subcontainer_name'=>$name,'providers'=>$providers]);
     }
     public function store(Request $request,$id)
     {
@@ -76,13 +76,13 @@ class ProcessController extends Controller
     {
         //
     }
-public function addForm($subcontainerId){
+public function addForm($subcontainerId,$name){
     $processes = DB::table('processes')
         
 
         ->get();
 
-    return view('demarches/ajouter',['demarches'=>$processes,'subcontainer_id'=>$subcontainerId]);
+    return view('demarches/ajouter',['demarches'=>$processes,'subcontainer_id'=>$subcontainerId,'subcontainer_name'=>$name]);
 }
 public function add(Request $request, $subcontainerId){
 

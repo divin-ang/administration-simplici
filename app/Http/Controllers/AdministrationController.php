@@ -37,8 +37,11 @@ class AdministrationController extends Controller
         
 
         ->get();
+        $subcontainer_name=DB::table('subcontainer')
+        ->where('subcontainer_id',$id)
+        ->get();
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id]);
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
         
     }
     
