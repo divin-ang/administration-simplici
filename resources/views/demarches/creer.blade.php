@@ -21,7 +21,7 @@
           <div class="form-group row">
          <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('description') }}</label>
          <div class="col-md-6">
-          <input type='text' class="form-control"  name="description" required />
+          <input type='text' class="form-control"  name="description"  />
           </div>
      
          </div>
@@ -82,7 +82,7 @@
            <div class="form-group row">
          <label for="duration" class="col-md-4 col-form-label text-md-right">{{ __('Durée') }}</label>
          <div class="col-md-6">
-          <input type='text' class="form-control"  name="duration" required />
+          <input type='text' class="form-control"  name="duration"  />
           
           
           </div>
