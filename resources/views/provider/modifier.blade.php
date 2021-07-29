@@ -37,7 +37,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaire d\'appel') }}</label>
          <div class="col-md-6">
-          <textarea  cols="60" rows="7" placeholder='exemple "Antenne Chambéry :"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-16:30;' class="form-control" value='{{$provider->provider_phone_timetable}}' name="horaires"  ></textarea>
+          <textarea  cols="60" rows="7" class="form-control" value='{{$provider->provider_phone_timetable}}' name="horaires"  ></textarea>
           </div>
          </div>
 
@@ -53,7 +53,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaires Accueil') }}</label>
          <div class="col-md-6">
-          <textarea  cols="60" rows="7"  placeholder='"Antenne Chambéry (sur RDV):"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-16:30;' class="form-control" value='{{$provider->provider_postal_address_timetable}}' name="accueil"></textarea>
+          <textarea  cols="60" rows="7"   class="form-control" value='{{$provider->provider_postal_address_timetable}}' name="accueil"></textarea>
           </div>
          </div>
 
@@ -62,7 +62,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Rende-vous') }}</label>
          <div class="col-md-6">
-          <input  type='url'  placeholder='https://formulaires.simplici.grandchambery.fr/eau/je-contacte-le-service-des-eaux/' class="form-control" value='{{$provider->provider_postal_address_timetable_rdv}}' name="rdv"/>
+          <input  type='url'  class="form-control" value='{{$provider->provider_postal_address_timetable_rdv}}' name="rdv"/>
           </div>
          </div>
 

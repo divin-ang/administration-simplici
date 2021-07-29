@@ -36,7 +36,7 @@
 
 
           
-         <h3>{{ __('Adresse postale') }}</p>
+         <h3>{{ __('Adresse postale') }}</h3>
          
           <p>{{$provider->provider_postal_address}}</p>
          
