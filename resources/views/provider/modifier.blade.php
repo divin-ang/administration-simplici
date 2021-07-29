@@ -29,7 +29,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Contacts téléphoniques') }}</label>
          <div class="col-md-6">
-          <textarea cols="60" rows="7" class="form-control" value='' name="phone"  >{{$provider->provider_phone}}</textarea>
+          <textarea cols="60" rows="7" class="form-control" value='' placeholder="par exemple : Au 04 79 96 86 70 choix 1 pour Chambéry ou au 04 79 54 53 56 pour l'Antenne des Bauges" name="phone"  >{{$provider->provider_phone}}</textarea>
           </div>
          </div>
          
@@ -37,7 +37,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaire d\'appel') }}</label>
          <div class="col-md-6">
-          <textarea  cols="60" rows="7" class="form-control"  name="horaires"  >{{$provider->provider_phone_timetable}}</textarea>
+          <textarea  cols="60" rows="7" class="form-control" placeholder='par exemple :  "Antenne Chambéry :"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;' name="horaires"  >{{$provider->provider_phone_timetable}}</textarea>
           </div>
          </div>
 
@@ -45,7 +45,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Adresse postale') }}</label>
          <div class="col-md-6">
-          <textarea cols="60" rows="7"   name="adresse" >{{$provider->provider_postal_address}}</textarea>
+          <textarea  rows="7"  placeholder="par exemple : Au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard" name="adresse" >{{$provider->provider_postal_address}}</textarea>
           </div>
          </div>
 
@@ -53,7 +53,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaires Accueil') }}</label>
          <div class="col-md-6">
-          <textarea  cols="60" rows="7"   class="form-control"  name="accueil">{{$provider->provider_postal_address_timetable}}</textarea>
+          <textarea  cols="60" rows="7"   class="form-control"  placeholder='par exemple "Antenne Chambéry(sur RDV) :"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;' name="accueil">{{$provider->provider_postal_address_timetable}}</textarea>
           </div>
          </div>
 
