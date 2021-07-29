@@ -29,9 +29,9 @@ Route::get('/categorie/changer/{id}/{name}', [App\Http\Controllers\ContainerCont
 Route::get('/demarches/{id}/{name}', [App\Http\Controllers\AdministrationController::class, 'getDemarches'])->middleware('roles:admin')->name('demarches');
 Route::get('/demarche/modifier/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'updateForm'])->middleware('roles:admin');
 Route::post('/demarche/modifier/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'update'])->middleware('roles:admin');
-Route::get('/demarche/creer/{id}', [App\Http\Controllers\ProcessController::class, 'storeForm'])->middleware('roles:admin');
+Route::get('/demarche/creer/{id}/{name}', [App\Http\Controllers\ProcessController::class, 'storeForm'])->middleware('roles:admin');
 Route::post('/demarche/creer/{id}', [App\Http\Controllers\ProcessController::class, 'store'])->middleware('roles:admin');
-Route::get('/demarche/ajouter/{id}', [App\Http\Controllers\ProcessController::class, 'addForm'])->middleware('roles:admin');
+Route::get('/demarche/ajouter/{id}/{name}', [App\Http\Controllers\ProcessController::class, 'addForm'])->middleware('roles:admin');
 Route::post('/demarche/ajouter/{id}', [App\Http\Controllers\ProcessController::class, 'add'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}/{name}', [App\Http\Controllers\ProcessController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'destroy'])->middleware('roles:admin');
