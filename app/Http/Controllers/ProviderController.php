@@ -17,7 +17,7 @@ class ProviderController extends Controller
         //
         $providers =DB::table('providers')
         ->get();
-        return new view('/provider/afficher',['providers'=>$providers]);
+        return new view('/admin/provider',['providers'=>$providers]);
     }
 
     /**
