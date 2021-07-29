@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Modifier une sous catégorie') }}</div>
+                <div class="card-header">{{ __('Modifier la sous catégorie') }} {{$subcontainer->subcontainer_name}} dans {{$container_name}}/div>
 
                 <div class="card-body">
                    

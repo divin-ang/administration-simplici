@@ -45,10 +45,10 @@ class SubcontainerController extends Controller
         return view('admin/categorie',['sousCategory'=>$Souscategories]);
     }
 
-    public function storeForm($id)
+    public function storeForm($id,$name)
     {
         //
-        return view('sousCategories/creer',['containerId'=>$id]);
+        return view('sousCategories/creer',['containerId'=>$id,'container_name'=>$name]);
 
     }
 
@@ -97,13 +97,13 @@ class SubcontainerController extends Controller
      
     }
 
-    public function updateForm(Request $request, $id)
+    public function updateForm(Request $request, $id,$name)
     {
         //
         $subcontainer =DB::table('subcontainer')
         ->where('subcontainer_id',$id)
         ->get();
-        return view("sousCategories/modifier",['subcontainer'=>$subcontainer[0]]);
+        return view("sousCategories/modifier",['subcontainer'=>$subcontainer[0],'container_name'=>$name]);
     }
   
     /**
