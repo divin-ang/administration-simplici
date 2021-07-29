@@ -77,10 +77,13 @@ class ProviderController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $phone=$request->phone!==null?$request->phone:"";
+        $horaires=$request->horaires!==null?$request->horaires:"";
+
         DB::table('providers')
         ->where('provider_id', $id)  
-       
-        ->update(['provider_proposed_by'=>$request->nom,'provider_service'=>$request->service,'provider_phone'=>$request->phone,'provider_phone_timetable'=>$request->horaires,'provider_postal_address'=>$request->adresse,'provider_postal_address_timetable'=>$request->accueil,'provider_postal_address_timetable_rdv'=>$request->rdv,'provider_write_online'=>$request->url]);  // update the record in the DB. 
+    
+        ->update(['provider_proposed_by_name'=>$request->nom,'provider_service'=>$request->service,'provider_phone'=>$hone,'provider_phone_timetable'=>$horaires,'provider_postal_address'=>$request->adresse,'provider_postal_address_timetable'=>$request->accueil,'provider_postal_address_timetable_rdv'=>$request->rdv,'provider_write_online'=>$request->url]);  // update the record in the DB. 
         $providers =DB::table('providers')
         ->get();
         return  view('provider/afficher',['providers'=>$providers]);
