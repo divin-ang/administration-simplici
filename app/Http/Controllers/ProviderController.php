@@ -50,6 +50,10 @@ class ProviderController extends Controller
     public function show($id)
     {
         //
+        $providers =DB::table('providers')
+        ->where('provider_id',$id)
+        ->get();
+        return view('provider/displayOne',['provider'=>$providers[0]]);
     }
 
     /**
@@ -73,6 +77,14 @@ class ProviderController extends Controller
     public function update(Request $request, $id)
     {
         //
+        DB::table('providers')
+        ->where('provider_id', $id)  
+       
+        ->update(['provider_proposed_by_name'=>$request->nom,'provider_service'=>$request->service,'provider_phone'=>$request->phone,'provider_phone_timetable'=>$request->horaires,'provider_postal_address'=>$request->adresse,'provider_postal_address_timetable'=>$request->accueil,'provider_postal_address_timetable_rdv'=>$request->rdv,'provider_write_online'=>$request->url]);  // update the record in the DB. 
+        $providers =DB::table('providers')
+        ->get();
+        return  view('provider/afficher',['providers'=>$providers]);
+        
     }
     public function updateForm($id,$name)
     {
