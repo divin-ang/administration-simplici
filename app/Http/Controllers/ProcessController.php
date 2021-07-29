@@ -63,7 +63,11 @@ class ProcessController extends Controller
 
         ->get();
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id]);
+        $subcontainer_name=DB::table('subcontainer')
+        ->where('subcontainer_id',$subcontainerId)
+        ->get();
+
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
     }
 
     /**
@@ -100,8 +104,11 @@ public function add(Request $request, $subcontainerId){
 
         ->get();
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId]);
+        $subcontainer_name=DB::table('subcontainer')
+        ->where('subcontainer_id',$subcontainerId)
+        ->get();
 
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
 
 }
     /**
@@ -143,7 +150,7 @@ public function add(Request $request, $subcontainerId){
         $subcontainerName = DB::table('subcontainer')
         ->where('subcontainer_id', $subcontainerId)  
         ->get();
-        return redirect()->route('demarches', ['id' => $subcontainerId,'name'=>$subcontainerName[0]->subcontainer_name]);
+        return redirect()->route('demarches', ['id' => $subcontainerId,'name'=>$subcontainerName[0]->subcontainer_name,'subcontainer_name'=>$subcontainerName[0]->subcontainer_name]);
 
         //return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId]);
      
@@ -185,6 +192,7 @@ public function add(Request $request, $subcontainerId){
         ->where('process_id',$id)
         ->delete();
 
+
         $processes = DB::table('subcontainer')
         ->where('subcontainer.subcontainer_id' ,'=',$subcontainerId)
         ->join('subcontainer_process', 'subcontainer_process.subcontainer_id', '=', 'subcontainer.subcontainer_id')
@@ -194,7 +202,10 @@ public function add(Request $request, $subcontainerId){
         ->select('processes.*')
 
         ->get();
+        $subcontainer_name=DB::table('subcontainer')
+        ->where('subcontainer_id',$subcontainerId)
+        ->get();
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId]);
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
     }
 }
