@@ -44,5 +44,13 @@ class AdministrationController extends Controller
         return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
         
     }
+    public function getProviders()
+    {
+        //
+        $providers =DB::table('providers')
+        ->get();
+        return new view('admin/provider',['providers'=>$providers]);
+    }
+
     
 }
