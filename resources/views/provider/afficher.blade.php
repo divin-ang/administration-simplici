@@ -5,8 +5,7 @@
 <div class="provider">
     <div class="row justify-content-center">
         <div class="col-md-11">
-           <a href="{{ url('/utilisateurs') }}" class="user_link ">Gérer les utilisateurs</a>
-                             <a href="{{ url('/provider'.'/supprimer') }}" class="user_link">Supprimer une démarche de toutes les sous catégories</a>
+        
             <div class="card">
             
                              
