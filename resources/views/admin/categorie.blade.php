@@ -23,7 +23,7 @@
 
                 <div class="item">
                   <a href="{{ url('sous-categorie/creer/'.$sousCategory[0]->container_id.'/'.$sousCategory[0]->subcontainer_name) }}" class="ajouter">Ajouter une nouvelle sous catégorie</a>
-                </div>
+                
                  
                  @foreach($sousCategory as $sous_categorie)
                   
