@@ -60,7 +60,7 @@
 
          
           <div class="form-group row">
-         <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Rende-vous') }}</label>
+         <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('url de prise de rende-vous') }}</label>
          <div class="col-md-6">
           <input  type='url'  class="form-control" value='{{$provider->provider_postal_address_timetable_rdv}}' name="rdv"/>
           </div>
