@@ -39,7 +39,7 @@ Route::get('/demarche/supprimer/', [App\Http\Controllers\ProcessController::clas
 Route::get('/demarche/supprimer/{id}', [App\Http\Controllers\ProcessController::class, 'destroyEvryWhere'])->middleware('roles:admin');
 
 Route::post('/sous-categorie/modifier/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'update'])->middleware('roles:admin');
-Route::get('/sous-categorie/modifier/{id}/{name}', [App\Http\Controllers\SubcontainerController::class, 'updateForm'])->middleware('roles:admin');
+Route::get('/sous-categorie/modifier/{id}/{containerName}/{name}', [App\Http\Controllers\SubcontainerController::class, 'updateForm'])->middleware('roles:admin');
 Route::post('/sous-categorie/creer/{id}', [App\Http\Controllers\SubcontainerController::class, 'store'])->middleware('roles:admin');
 Route::get('/sous-categorie/creer/{id}/{name}', [App\Http\Controllers\SubcontainerController::class, 'storeForm'])->middleware('roles:admin');
 Route::post('/sous-categorie/supprimer/{id}', [App\Http\Controllers\SubcontainerController::class, 'suprimerForm'])->middleware('roles:admin');
