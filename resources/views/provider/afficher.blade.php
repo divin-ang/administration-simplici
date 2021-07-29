@@ -2,12 +2,11 @@
 
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
-<div class="container">
+<div class="provider">
     <div class="row justify-content-center">
         <div class="col-md-11">
            <a href="{{ url('/utilisateurs') }}" class="user_link ">Gérer les utilisateurs</a>
-           <a href="{{ url('/services'.'/liste') }}" class="user_link ">Gérer les utilisateurs</a>
-                             <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link">Supprimer une démarche de toutes les sous catégories</a>
+                             <a href="{{ url('/provider'.'/supprimer') }}" class="user_link">Supprimer une démarche de toutes les sous catégories</a>
             <div class="card">
             
                              
@@ -28,11 +27,11 @@
                  <div>
                
 
-                 @foreach($categories as $categorie)
+                 @foreach($providers as $provider)
                      <div class='row item'>
-                     <span class="col-4 name">  {{$categorie->container_name}}</span>
-                     <a href="{{ url('categorie/'.$categorie->container_id.'/'.$categorie->container_name) }}" class=" col-4 afficher">Afficher les sous catégories</a>
-                     <a href="{{ url('categorie/changer/'.$categorie->container_id.'/'.$categorie->container_name) }}" class="col-2 modifier">Modifier</a>
+                     <span class="col-4 name">  {{$provider->provider_proposed_by}} : {{$provider->provider_services}}</span>
+                     <a href="{{ url('provider/'.$provider->provider_id.'/'.$provider->provider_service) }}" class=" col-4 afficher">Afficher les sous catégories</a>
+                     <a href="{{ url('provider/changer/'.$provider->provider_id.'/'.$provider->provider_name) }}" class="col-2 modifier">Modifier</a>
                  </div>
                      @endforeach
                  

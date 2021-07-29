@@ -52,6 +52,9 @@ Route::get('/utilisateur/supprimer/{id}', [App\Http\Controllers\UserController::
 Route::get('/utilisateur/compte', [App\Http\Controllers\UserController::class, 'compte'])->name('compte')->middleware('auth');
 
 Route::post('/utilisateur/modifier/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('utilisateurAipdate')->middleware('roles:admin');
+
+Route::get('/services/liste', [App\Http\Controllers\ProviderController::class, 'index'])->name('provider_list')->middleware('roles:admin');
+
 //Route::get('/utilisateurs', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
 //Route::post('/password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset.token');
 
