@@ -37,7 +37,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaire d\'appel') }}</label>
          <div class="col-md-6">
-          <input type='textarea' placeholder='exemple "Antenne Chambéry :"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-16:30;' class="form-control" value='{{$provider->provider_phone_timetable}}' name="horaires" required />
+          <textarea  placeholder='exemple "Antenne Chambéry :"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-16:30;' class="form-control" value='{{$provider->provider_phone_timetable}}' name="horaires"  ></textarea>
           </div>
          </div>
 
@@ -45,7 +45,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Adresse postale') }}</label>
          <div class="col-md-6">
-          <input type='textarea' placeholder=' Exemple : Au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard'class="form-control" value='{{$provider->provider_postal_address}}' name="adresse" required />
+          <textarea placeholder=' Exemple : Au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard'class="form-control" value='{{$provider->provider_postal_address}}' name="adresse" ></textarea>
           </div>
          </div>
 
@@ -53,7 +53,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaires Accueil') }}</label>
          <div class="col-md-6">
-          <input type='textarea'  placeholder='"Antenne Chambéry (sur RDV):"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-16:30;' class="form-control" value='{{$provider->provider_postal_address_timetable}}' name="service" required />
+          <textarea   placeholder='"Antenne Chambéry (sur RDV):"8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;8:00-12:00 13:30-17:30;"Antenne du Chatelard :"9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-17:30;9:00-12:00 14:00-16:30;' class="form-control" value='{{$provider->provider_postal_address_timetable}}' name="service"></textarea>
           </div>
          </div>
 
