@@ -15,7 +15,7 @@ class ProviderController extends Controller
     public function index()
     {
         //
-        $providers =DB::table('provider')
+        $providers =DB::table('providers')
         ->get();
         return new view('provider/afficher',['providers'=>$providers]);
     }
