@@ -43,7 +43,7 @@ class SubcontainerController extends Controller
         ->where('subcontainer.container_id', $id)
         ->get();
         $container_name=DB::table('containers')
-        ->where('container_name',$id)
+        ->where('container_id',$id)
         ->get();
         return view('admin/categorie',['sousCategory'=>$Souscategories,'container_name'=>$container_name[0]->container_name]);
     }
