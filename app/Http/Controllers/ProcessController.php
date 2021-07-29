@@ -64,7 +64,7 @@ class ProcessController extends Controller
         ->get();
 
         $subcontainer_name=DB::table('subcontainer')
-        ->where('subcontainer_id',$subcontainerId)
+        ->where('subcontainer_id',$id)
         ->get();
 
         return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
