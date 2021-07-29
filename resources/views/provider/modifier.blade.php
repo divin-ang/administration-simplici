@@ -29,7 +29,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Contacts téléphoniques') }}</label>
          <div class="col-md-6">
-          <textarea cols="60" rows="7" placeholder=" Exemple : Au 04 79 96 86 70 choix 1 pour Chambéry ou au 04 79 54 53 56 pour l'Antenne des Bauges" class="form-control" value='{{$provider->provider_phone}}' name="phone"  ></textarea>
+          <textarea cols="60" rows="7" class="form-control" value='{{$provider->provider_phone}}' name="phone"  ></textarea>
           </div>
          </div>
          
@@ -45,7 +45,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Adresse postale') }}</label>
          <div class="col-md-6">
-          <textarea cols="60" rows="7" placeholder=' Exemple : Au 298 rue de Chantabord à Chambéry ou avenue Denis Therme à Le Châtelard'class="form-control" value='{{$provider->provider_postal_address}}' name="adresse" ></textarea>
+          <textarea cols="60" rows="7"  value='{{$provider->provider_postal_address}}' name="adresse" ></textarea>
           </div>
          </div>
 
