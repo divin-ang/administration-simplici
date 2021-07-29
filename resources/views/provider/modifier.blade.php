@@ -10,7 +10,7 @@
                 <div class="card-body">
                    
 
-         <form  action="{{url('service/modifier/'.$provider->provider_id.'/'.$provider->provider_proposed_by)  }}" method="POST">
+         <form  action="{{url('services/modifier/'.$provider->provider_id.'/'.$provider->provider_proposed_by)  }}" method="POST">
          @csrf
          <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
@@ -50,7 +50,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Adresse postale') }}</label>
          <div class="col-md-6">
-          <input type='text' class="form-control" value='{{$provider->provider_postal_adress}}' name="adresse" required />
+          <input type='text' class="form-control" value='{{$provider->provider_postal_address}}' name="adresse" required />
           </div>
          </div>
 
@@ -58,7 +58,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaires Accueil') }}</label>
          <div class="col-md-6">
-          <input type='text' class="form-control" value='{{$provider->provider_postal_adress_timetable}}' name="service" required />
+          <input type='text' class="form-control" value='{{$provider->provider_postal_address_timetable}}' name="service" required />
           </div>
          </div>
 
@@ -67,7 +67,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Rende-vous') }}</label>
          <div class="col-md-6">
-          <input type='text' class="form-control" value='{{$provider->provider_postal_adress_timetable_rdv}}' name="service" required />
+          <input type='text' class="form-control" value='{{$provider->provider_postal_address_timetable_rdv}}' name="service" required />
           </div>
          </div>
 
