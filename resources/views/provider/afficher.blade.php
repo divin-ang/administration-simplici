@@ -28,7 +28,7 @@
 
                  @foreach($providers as $provider)
                      <div class='row item'>
-                     <a class="col-7 name" href="{{ url('service/afficher'.$provider->provider_id.'/'.$provider->provider_proposed_by) }}">  {{$provider->provider_proposed_by}}
+                     <a class="col-7 name" href="{{ url('service/afficher/'.$provider->provider_id.'/'.$provider->provider_proposed_by) }}">  {{$provider->provider_proposed_by}}
                      @if(strlen($provider->provider_service)>0)
                        : {{$provider->provider_service}}
                        @endif
