@@ -42,7 +42,10 @@ class SubcontainerController extends Controller
         $Souscategories = DB::table('subcontainer')
         ->where('subcontainer.container_id', $id)
         ->get();
-        return view('admin/categorie',['sousCategory'=>$Souscategories]);
+        $container_name=DB::table('container')
+        ->where('container_name',$id)
+        ->get();
+        return view('admin/categorie',['sousCategory'=>$Souscategories,'container_name'=>$container_name[0]->container_name]);
     }
 
     public function storeForm($id,$name)
