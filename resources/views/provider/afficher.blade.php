@@ -29,8 +29,12 @@
 
                  @foreach($providers as $provider)
                      <div class='row item'>
-                     <span class="col-4 name">  {{$provider->provider_proposed_by}} : {{$provider->provider_service}}</span>
-                     <a href="{{ url('provider/'.$provider->provider_id.'/'.$provider->provider_service) }}" class=" col-4 afficher">Afficher les sous catégories</a>
+                     <span class="col-6 name">  {{$provider->provider_proposed_by}}
+                     @if($provider->provider_service!==null)
+                       : {{$provider->provider_service}}
+                       @endif
+                       </span>
+                     <a href="{{ url('provider/'.$provider->provider_id.'/'.$provider->provider_service) }}" class=" col-3 afficher">Afficher les sous catégories</a>
                      <a href="{{ url('provider/changer/'.$provider->provider_id.'/'.$provider->provider_proposed_by) }}" class="col-2 modifier">Modifier</a>
                  </div>
                      @endforeach
