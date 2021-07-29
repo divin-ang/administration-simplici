@@ -29,7 +29,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Contacts téléphoniques') }}</label>
          <div class="col-md-6">
-          <input type='textarea' placeholder=" Exemple : Au 04 79 96 86 70 choix 1 pour Chambéry ou au 04 79 54 53 56 pour l'Antenne des Bauges" class="form-control" value='{{$provider->provider_phone}}' name="phone"  />
+          <textarea cols="50" rows="20" placeholder=" Exemple : Au 04 79 96 86 70 choix 1 pour Chambéry ou au 04 79 54 53 56 pour l'Antenne des Bauges" class="form-control" value='{{$provider->provider_phone}}' name="phone"  ></textarea>
           </div>
          </div>
          
