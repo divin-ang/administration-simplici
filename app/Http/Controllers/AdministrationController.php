@@ -18,11 +18,11 @@ class AdministrationController extends Controller
 
         return view('admin/accueil',['categories'=>$categories]);
     }
-    function  getCategory($id){
+    function  getCategory($id,$name){
         $Souscategories = DB::table('subcontainer')
         ->where('subcontainer.container_id', '=', $id)
         ->get();
-        return view('admin/categorie',['sousCategory'=>$Souscategories]);
+        return view('admin/categorie',['sousCategory'=>$Souscategories,'container_name'=>$name]);
 
     }
     function getDemarches($id){
