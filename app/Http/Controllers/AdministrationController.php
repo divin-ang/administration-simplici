@@ -55,6 +55,9 @@ class AdministrationController extends Controller
         ->get();
 
         return view('admin/accueil',['categories'=>$categories]);
+        $providers =DB::table('providers')
+        ->get();
+        return  view('admin/provider',['providers'=>$providers]);
      
     }
 
