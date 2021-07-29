@@ -29,7 +29,7 @@
 
                  @foreach($providers as $provider)
                      <div class='row item'>
-                     <a class="col-5 name">  {{$provider->provider_proposed_by}}
+                     <a class="col-7 name">  {{$provider->provider_proposed_by}}
                      @if(strlen($provider->provider_service)>0)
                        : {{$provider->provider_service}}
                        @endif
