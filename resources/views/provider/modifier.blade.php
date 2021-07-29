@@ -29,7 +29,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Contacts téléphoniques') }}</label>
          <div class="col-md-6">
-          <textarea cols="60" rows="7" class="form-control" value='{{$provider->provider_phone}}' name="phone"  ></textarea>
+          <textarea cols="60" rows="7" class="form-control" value='' name="phone"  >{{$provider->provider_phone}}</textarea>
           </div>
          </div>
          
