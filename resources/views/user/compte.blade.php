@@ -26,7 +26,7 @@
                      <p class="">Nom :  {{$user->name}}</p>
                      <p class="">Email: {{$user->email}}</p>
                      @if($user->role =='admin')         
-                       <p class="">Niveau d'accès: {{$user->role}}</p>
+                       <p class="">Niveau d'accès: Vous êtes administrateur</p>
                         <a href="{{ url('utilisateur/modifier/'.$user->id) }}" class=" modifier">modifier les autorisations</a>
                 
                      @endif
