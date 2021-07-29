@@ -22,8 +22,8 @@
                
 
                  <div class="item">
-                  <a href="{{ url('demarche/creer/'.$subcontainerId) }}" class="ajouter">Créer une nouvelle démarche</a>
-                  <a href="{{ url('demarche/ajouter/'.$subcontainerId) }}" class="ajouter">Ajouter une  démarche existante à cette sous catégorie</a></div>
+                  <a href="{{ url('demarche/creer/'.$subcontainerId.'/'.$subcontainer_name) }}" class="ajouter">Créer une nouvelle démarche</a>
+                  <a href="{{ url('demarche/ajouter/'.$subcontainerId.'/'.$subcontainer_name) }}" class="ajouter">Ajouter une  démarche existante à cette sous catégorie</a></div>
 
                  @foreach($demarches as $demarche)
                    
