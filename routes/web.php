@@ -54,6 +54,8 @@ Route::get('/utilisateur/compte', [App\Http\Controllers\UserController::class, '
 Route::post('/utilisateur/modifier/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('utilisateurAipdate')->middleware('roles:admin');
 
 Route::get('/services/liste', [App\Http\Controllers\ProviderController::class, 'index'])->name('provider_list')->middleware('roles:admin');
+Route::get('/services/modifier/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'updateForm'])->name('provider_update_form')->middleware('roles:admin');
+Route::post('/services/modifier/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'update'])->name('provider_update')->middleware('roles:admin');
 
 //Route::get('/utilisateurs', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
 //Route::post('/password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset.token');

@@ -74,6 +74,14 @@ class ProviderController extends Controller
     {
         //
     }
+    public function updateForm($id,$name)
+    {
+        //
+        $providers =DB::table('providers')
+        ->where('provider_id',$id)
+        ->get();
+        return view('provider/modifier',['provider'=>$providers[0]]);
+    }
 
     /**
      * Remove the specified resource from storage.
