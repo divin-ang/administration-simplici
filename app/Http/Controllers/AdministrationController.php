@@ -47,9 +47,15 @@ class AdministrationController extends Controller
     public function getProviders()
     {
         //
-        $providers =DB::table('providers')
+        $categories = DB::table('containers')
+       
+
+        
+
         ->get();
-        return new view('admin/provider',['providers'=>$providers]);
+
+        return view('admin/accueil',['categories'=>$categories]);
+     
     }
 
     
