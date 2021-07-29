@@ -37,7 +37,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaire d\'appel') }}</label>
          <div class="col-md-6">
-          <textarea  cols="60" rows="7" class="form-control" value='{{$provider->provider_phone_timetable}}' name="horaires"  ></textarea>
+          <textarea  cols="60" rows="7" class="form-control"  name="horaires"  >{{$provider->provider_phone_timetable}}</textarea>
           </div>
          </div>
 
@@ -45,7 +45,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Adresse postale') }}</label>
          <div class="col-md-6">
-          <textarea cols="60" rows="7"  value='{{$provider->provider_postal_address}}' name="adresse" ></textarea>
+          <textarea cols="60" rows="7"   name="adresse" >{{$provider->provider_postal_address}}</textarea>
           </div>
          </div>
 
@@ -53,7 +53,7 @@
           <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Horaires Accueil') }}</label>
          <div class="col-md-6">
-          <textarea  cols="60" rows="7"   class="form-control" value='{{$provider->provider_postal_address_timetable}}' name="accueil"></textarea>
+          <textarea  cols="60" rows="7"   class="form-control"  name="accueil">{{$provider->provider_postal_address_timetable}}</textarea>
           </div>
          </div>
 
