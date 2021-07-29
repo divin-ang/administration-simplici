@@ -111,6 +111,18 @@ class UserController extends Controller
         ->get();
         return view("user/modifier",['user'=>$users[0]]);
     }
+
+    public function compte()
+    {
+        //
+        $id= Auth::id();
+        $users=DB::table('users')
+        ->where('id',$id)
+        ->get();
+        return view("user/compte",['users'=>$users]);
+    }
+    
+
   
     /**
      * Remove the specified resource from storage.
