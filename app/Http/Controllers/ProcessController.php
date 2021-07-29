@@ -67,7 +67,7 @@ class ProcessController extends Controller
         ->where('subcontainer_id',$id)
         ->get();
 
-        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
+        return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$id,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
     }
 
     /**
