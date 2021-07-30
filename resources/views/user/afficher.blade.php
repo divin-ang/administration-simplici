@@ -15,11 +15,7 @@
                         </div>
                     @endif
 
-                   
-                            
-                                    <a class="nav-link" href="{{ route('newcompte') }}">{{ __('Créér un compte') }}</a>
-                               
-                        
+                    {{ __('') }}
                 </div>
                 <div>
                  <div>
