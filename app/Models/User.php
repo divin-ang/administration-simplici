@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use Mail;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -43,5 +44,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function generatePassword()
+    {
+      // Generate random string and encrypt it. 
+      return bcrypt(str_random(35));
+    }
+
+    public static function sendWelcomeEmail($user)
+    {
+      // Generate a new reset password token
+      $token = app('auth.password.broker')->createToken($user);
+      
+      // Send email
+      Mail::send('emails.welcome', ['user' => $user, 'token' => $token], function ($m) use ($user) {
+        $m->from('hello@appsite.com', 'simpliciplus');
+
+        $m->to($user->email, $user->name)->subject('création de mot de passe');
+      });
+    }  
 
 }
