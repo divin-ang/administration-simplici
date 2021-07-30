@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',[App\Http\Controllers\HomeController::class, 'index'])->middleware('roles:admin');
-Route::poste('/compte',[App\Http\Controllers\ContactController::class, 'create'])->name('newUser')->middleware('roles:admin');
+Route::post('/compte',[App\Http\Controllers\ContactController::class, 'create'])->name('newUser')->middleware('roles:admin');
 Route::get('/compte',[App\Http\Controllers\ContactController::class, 'index'])->name('compte')->middleware('roles:admin');   
 
 Route::get('/attente',[App\Http\Controllers\HomeController::class, 'attente'])->name('attente')->middleware('roles:user');
