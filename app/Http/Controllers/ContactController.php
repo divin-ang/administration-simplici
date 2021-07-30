@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Validator;
 use Redirect;
+use Illuminate\Support\Facades\DB;
 
 
 class ContactController extends Controller
@@ -33,14 +34,12 @@ class ContactController extends Controller
 
       //generate a password for the new users
       $pw = User::generatePassword();
-
+     
+      
+      DB::table('users')
+      ->updateOrInsert(['name'=>$request->name,'email'=>$request->email]);
       //add new user to database
-      $user = new User;
-      $user->name = $request->input('name');
-      $user->email = $request->input('email');
-      $user->password = $pw;
-      $user->save();
-
+    
       User::sendWelcomeEmail($user);
 
       return Redirect::to('home');
