@@ -17,7 +17,7 @@
 
                    
                             
-                                    <a class="nav-link" href="{{ route('compte') }}">{{ __('Créér un compte') }}</a>
+                                    <a class="nav-link" href="{{ route('newcompte') }}">{{ __('Créér un compte') }}</a>
                                
                         
                 </div>
