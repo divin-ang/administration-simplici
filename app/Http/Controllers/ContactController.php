@@ -10,6 +10,13 @@ use Redirect;
 
 class ContactController extends Controller
 {
+
+    public function index(){
+
+        return view('auth/nouveau');
+    
+    }
+
     public function create(Request $request)
   {
     $validator = Validator::make($request->all(), [
