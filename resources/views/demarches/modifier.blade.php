@@ -51,7 +51,7 @@
            
            <div class="col-md-6">
                  <select class="form-control "  name="providerId" required >
-                     <option value='{!!$process->provider_id !!}'>{{$process->provider_id}}</option>
+                     <option value='{!!$process->provider_id !!}'>{{$provider_name}}</option>
 
                       @foreach($providers as $provider)
                         <option value="{!! $provider->provider_id !!}">{{$provider->provider_proposed_by}} {{$provider->provider_service}}</option>

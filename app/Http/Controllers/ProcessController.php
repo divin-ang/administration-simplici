@@ -165,7 +165,11 @@ public function add(Request $request, $subcontainerId){
         $providers =DB::table('providers')
         ->distinct()
         ->get();
-        return view("demarches/modifier",['process'=>$process[0],'providers'=>$providers,'subcontainerId'=>$subcontainerId]);
+        $provider_name = DB::table('providers')
+        ->join('processes','processes.provider_id','=','providers.provider_id')
+        ->select('provider_proposed_by')
+        ->get();
+        return view("demarches/modifier",['process'=>$process[0],'providers'=>$providers,'subcontainerId'=>$subcontainerId,'provider_name'=>$provider_name[0]->provider_proposed_by]);
     }
 
     /**
