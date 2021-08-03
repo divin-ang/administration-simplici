@@ -26,7 +26,7 @@
                       <h2 class="title">Modifier une catégorie</h2>
                       <div class="row">
 
-                        <img src="{{URL::asset('/images/site-accueil.png')}}" alt="profile Pic" height="200" width="200">
+                        <img src="{{ asset('images/site-accueil.png') }}" alt="tag">
                       </div>
                 </div>
 
