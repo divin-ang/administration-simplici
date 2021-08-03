@@ -30,9 +30,23 @@
            
            <div class="col-md-6">
                  <select class="form-control " value='{{$user->role}}' name="role" required >
-               <option value='{!! $user->role !!}'>{{$user->role}}</option>
-              <option value="admin">Administrateur</option>
+               <option value='{!! $user->role !!}'>
+                @if ($user->role==='admin')
+                Administrateur
+                
+                @else
+                utilisateur simple
+                    
+                @endif
+            
+            </option>
+              @if ($user->role==='admin')
+              
               <option value="user">utilisateur simple</option>
+              @else
+               <option value="admin">Administrateur</option>
+                  
+              @endif
 
     
              </select>

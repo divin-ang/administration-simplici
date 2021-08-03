@@ -54,8 +54,11 @@
                      <option value='{!!$process->provider_id !!}'>{{$provider_name}}</option>
 
                       @foreach($providers as $provider)
-                        <option value="{!! $provider->provider_id !!}">{{$provider->provider_proposed_by}} {{$provider->provider_service}}</option>
+                       @if($process->provider_id !==$provider->provider_id)
+                       <option value="{!! $provider->provider_id !!}">{{$provider->provider_proposed_by}} {{$provider->provider_service}}</option>
                        
+                           
+                       @endif
                 @endforeach
              </select>
         
