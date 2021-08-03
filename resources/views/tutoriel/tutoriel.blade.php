@@ -27,7 +27,7 @@
                       <div class="row">
 
                         <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col img-fluid">
-                        <img src="{{ asset('image/cat-modifier.png') }}" alt="accueil" class="col img-fluid">
+                        <img src="{{ asset('image/cat-form.png') }}" alt="accueil" class="col img-fluid">
                       </div>
                 </div>
 
