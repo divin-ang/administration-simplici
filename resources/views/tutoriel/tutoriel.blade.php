@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/sousCategorie.css') }}" >
+<link rel="stylesheet" type="text/css" href="{{ asset('css/tutoriel.css') }}" >
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -26,8 +26,8 @@
                       <h2 class="title">Modifier une catégorie</h2>
                       <div class="row">
 
-                        <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col img-fluid">
-                        <img src="{{ asset('image/cat-modifier.PNG') }}" alt="accueil" class="col img-fluid">
+                        <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col img-fluid accueil">
+                        <img src="{{ asset('image/cat-modifier.PNG') }}" alt="accueil" class="col img-fluid accueil">
                       </div>
                 </div>
 
