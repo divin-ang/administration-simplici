@@ -27,7 +27,7 @@
                       <div class="row">
 
                         <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col ">
-                        <img src="{{ asset('image/cat-form.png') }}" alt="accueil" class="col ">
+                        <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class="col ">
                       </div>
                 </div>
 
