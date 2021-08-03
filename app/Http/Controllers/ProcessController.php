@@ -166,6 +166,7 @@ public function add(Request $request, $subcontainerId){
         ->distinct()
         ->get();
         $provider_name = DB::table('providers')
+        ->where('process_id',$id)
         ->join('processes','processes.provider_id','=','providers.provider_id')
         ->select('provider_proposed_by')
         ->get();
