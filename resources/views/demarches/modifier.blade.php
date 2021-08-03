@@ -50,7 +50,8 @@
                 <label for="providerId" class="col-md-4 col-form-label text-md-right">{{ __('Origine') }}</label>
            
            <div class="col-md-6">
-                 <select class="form-control " value='{!!$process->process_draft_mode !!}' name="providerId" required >
+                 <select class="form-control "  name="providerId" required >
+                     <option value='{!!$process->provider_id !!}'>{{$process->provider_id}}</option>
 
                       @foreach($providers as $provider)
                         <option value="{!! $provider->provider_id !!}">{{$provider->provider_proposed_by}} {{$provider->provider_service}}</option>
