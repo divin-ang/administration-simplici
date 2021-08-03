@@ -23,7 +23,7 @@
 
                 <div class="item">
                   <div> 
-                      <h2 class="title">Modifier une catégorie</h2>
+                      <h2 class="title">Modifier une catégori</h2>
                       <div class="row">
 
                         <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col img-fluid">
