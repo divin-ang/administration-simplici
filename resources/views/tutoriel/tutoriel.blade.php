@@ -26,7 +26,7 @@
                       <h2 class="title">Modifier une catégorie</h2>
                       <div class="row">
 
-                        <img src="{{ asset('image/site-accueil.png') }}" alt="tag">
+                        <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="img-fluid">
                       </div>
                 </div>
 
