@@ -43,10 +43,10 @@
             </option>
 
             @if ($process->process_draft_mode===0)
-            <option value="0">Non</option>
+            <option value="0">Oui</option>
              
          @else
-         <option value="1">Oui</option>
+         <option value="1">Non</option>
          @endif
              
     
