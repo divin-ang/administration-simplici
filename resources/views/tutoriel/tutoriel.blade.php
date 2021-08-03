@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{$container_name}} : {{ __('Liste des sous catégories') }}</div>
+                <div class="card-header">Tutoriel</div>
 
                 <div class="card-body">
                     @if (session('status'))
