@@ -47,6 +47,7 @@ Route::get('/sous-categorie/creer/{id}/{name}', [App\Http\Controllers\Subcontain
 Route::post('/sous-categorie/supprimer/{id}', [App\Http\Controllers\SubcontainerController::class, 'suprimerForm'])->middleware('roles:admin');
 Route::get('/sous-categorie/supprimer/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/administration', [App\Http\Controllers\AdministrationController::class, 'get'])->middleware('roles:admin');
+Route::get('/tutoriel', [App\Http\Controllers\AdministrationController::class, 'tutoriel'])->middleware('roles:admin');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('roles:admin');
 Route::get('/utilisateurs', [App\Http\Controllers\UserController::class, 'index'])->name('utilisateurs')->middleware('roles:admin');
 Route::get('/utilisateur/modifier/{id}', [App\Http\Controllers\UserController::class, 'updateForm'])->name('utilisateurModifier')->middleware('roles:admin');

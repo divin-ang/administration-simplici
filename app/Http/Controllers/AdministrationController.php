@@ -60,6 +60,9 @@ class AdministrationController extends Controller
         return  view('admin/provider',['providers'=>$providers]);
      
     }
+    public function tutoriel (){
+        return view('tutoriel/tutoriel');
+    }
 
     
 }
