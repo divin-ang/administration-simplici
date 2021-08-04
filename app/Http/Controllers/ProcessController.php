@@ -186,7 +186,7 @@ public function add(Request $request, $subcontainerId){
         return view('demarches/afficherDocuments',['documents'=>$documents,'process'=>$process[0]]);
 
      }
-     public function creerForm($id){
+     public function creerDocumentForm($id){
          
           
         $process= DB::table('processes')
