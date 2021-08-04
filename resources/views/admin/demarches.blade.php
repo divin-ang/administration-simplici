@@ -29,7 +29,7 @@
                    
                    
                       <div class="item row">
-                        <span class="name col-9">  {{$demarche->process_name}}</span>
+                        <span class="name col-8">  {{$demarche->process_name}}</span>
                     <a href="{{ url('demarche/modifier/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col modifier">Modifier</a>
                     <a href="{{ url('demarche/documents/'.$demarche->process_id) }}" class="col modifier">Les documents nécessaires.</a>
                      <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col supprimer">Supprimer</a>
