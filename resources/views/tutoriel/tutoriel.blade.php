@@ -51,7 +51,7 @@
                 
                 </div>
             </div>
-            <div>
+            <div class="item text-center">
                   <h2>  Les sous catégories.</h2>
                   <p>Chaque rubrique de la page d'accueil est composée des sous catégories elles mêmes contenant les démarches.</p>
                   <p>
@@ -76,7 +76,7 @@
 
 
 
-            <div>
+            <div class="item text-center">
                 <h2>  Les démarches</h2>
                 <p>Les démarches sont regroupées en sous catégories</p>
                 <p>
@@ -108,7 +108,7 @@
                 </p>
           </div>
 
-          <div>
+          <div class="item text-center">
             <h2>Les fourniseurs des démarches</h2>
             <p>Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p>
