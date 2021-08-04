@@ -32,9 +32,9 @@
                           <ol>
                             <a href="#sous-categorie">Les sous catégories</a>
                             <ul>
-                                <ol> <a href="#afficher-sous-categorie"></a> Afficher les sous catégories</ol>
-                                <ol><a href="#modifier-sous-categorie"></a> Modifier une sous catégorie</ol>
-                                <ol><a href="#ajouter-sous-categorie"></a> Modifier une sous catégorie</ol>
+                                <ol> <a href="#afficher-sous-categorie"> Afficher les sous catégories </a></ol>
+                                <ol><a href="#modifier-sous-categorie">Modifier une sous catégorie </a></ol>
+                                <ol><a href="#ajouter-sous-categorie"> Modifier une sous catégorie </a></ol>
 
                             </ul>
                            
@@ -42,10 +42,10 @@
                           <ol>
                             <a href="#demarche h2">Les démarches</a>
                             <ul>
-                                <ol><a href="#afficher-demarche"></a>Afficher les démarches</ol>
-                                <ol><a href="#modifier-demarche"></a>Modifier une démarche</ol>
-                                <ol><a href="#creer-demarche"></a>Créer une démarche</ol>
-                                <ol><a href="#dupliquer-demarche"></a>Dupliquer une démarche</ol>
+                                <ol><a href="#afficher-demarche">Afficher les démarches</a></ol>
+                                <ol><a href="#modifier-demarche">Modifier une démarche</a></ol>
+                                <ol><a href="#creer-demarche">Créer une démarche </a></ol>
+                                <ol><a href="#dupliquer-demarche">Dupliquer une démarche </a></ol>
 
                             </ul>
                             
@@ -89,13 +89,13 @@
                       L'administration permet d'ajouter une sous catégorie à une rubrique, de modifier le nom d'une sous catégorie existante ou encore de supprimer la sous catégories.
                       <ul>
                          <ol>
-                             <h2 class="h3">Afficher les sous catégorie.</h2>
+                             <h2 class="h3" id="afficher-sous-categorie">Afficher les sous catégorie.</h2>
                              <p> Pour afficher les sous catégories d'une rubrique: cliquer sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
                              <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
                             
                          </ol>
                          <ol>
-                            <h2 class="h3">Ajouter une sous catégorie</h2>
+                            <h2 class="h3" id="ajouter-sous-categorie">Ajouter une sous catégorie</h2>
                             <p class="h5"> Pour ajouter une sous catégorie  dans une rubrique: cliquer sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
                             <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
                             <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
@@ -114,13 +114,13 @@
                     L'administration permet de créer une nouvelle  démarche dans une sous catégorie donnée, de modifier une démarche existante,de supprimer une démarche d'une sous catégorie. Il est également possible de dupliquer une démarche: c'est à dire ajouter une démarche qui existe dans une autre sous catégorie.
                     <ul>
                        <ol>
-                           <h2 class="h3">Afficher les démarches</h2>
+                           <h2 class="h3" id="afficher-demarche">Afficher les démarches</h2>
                            <p> Pour afficher les démarches d'une sous catégorie: cliquer sur le bouton afficher les démarches à droite du nom de la sous catégorie.</p>
                            <img src="{{ asset('image/afficher-demarches.png') }}" alt="afficher les demarches" class="col-md-10">
                            
                        </ol>
                        <ol>
-                          <h2 class="h3">Ajouter une démarche</h2>
+                          <h2 class="h3" id="Créer-demarche">Ajouter une démarche</h2>
                           <p> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton  créer une nouvelle démarche</p>
                           <img src="{{ asset('image/demarche-page.PNG') }}" alt="accueil" class="col-md-10">
                           <p class="h5">Ensuite completer le formulaire et cliquer sur valider.</p>
@@ -130,7 +130,7 @@
                       </ol>
 
                       <ol>
-                        <h2 class="h2">Dupliquer une démarche</h2>
+                        <h2 class="h2" id="dupliquer-demarche" >Dupliquer une démarche</h2>
                         <p class="h5"> Pour dupliquer  une démarche existante dans une sous catégorie: cliquer sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
                         <img src="{{ asset('image/ajouter-demarche.PNG') }}" alt="accueil" class="col-md-10">
                          <p class="h5">Sélectionner une démarche et cliquer sur valider.</p>
