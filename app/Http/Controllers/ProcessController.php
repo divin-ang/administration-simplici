@@ -217,7 +217,7 @@ public function add(Request $request, $subcontainerId){
         $process= DB::table('processes')
         ->where('processes.process_id',$id)
         ->get();
-        $documents=DB::table('annex_document')
+        $documents=DB::table('annex_documents')
         ->get();
         return view('demarches/duppliquerDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
      }
