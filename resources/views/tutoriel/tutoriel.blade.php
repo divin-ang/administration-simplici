@@ -24,10 +24,23 @@
 
 
                   <div>
-                      <a href="#categorie">Les catégories</a>
-                      <a href="#sous-categorie">Les sous catégories</a>
-                      <a href="#demarche">Les démarches</a>
-                      <a href="#fournisseur">Les fournisseurs</a>
+                      <ul>
+                          <ol>
+                            <a href="#categorie">Les catégories</a>
+                           
+                          </ol>
+                          <ol>
+                            <a href="#sous-categorie">Les sous catégories</a>
+                            
+                          </ol>
+                          <ol>
+                            <a href="#demarche">Les démarches</a>
+                            
+                          </ol>
+                          <ol>
+                            <a href="#fournisseur">Les fournisseurs</a>
+                          </ol>
+                      </ul>
                   </div>
                 <div class="item text-center">
                 <div> 
