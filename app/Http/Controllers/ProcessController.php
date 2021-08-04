@@ -183,7 +183,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
 
-        return view('demarches/afficherDocuments',['ddocuments'=>$documents,'process'=>$process[0]]);
+        return view('demarches/afficherDocuments',['documents'=>$documents,'process'=>$process[0]]);
 
      }
     /**
