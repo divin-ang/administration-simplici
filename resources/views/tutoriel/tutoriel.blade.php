@@ -129,15 +129,10 @@
                 L'ordre des plages horaires correpond aux jours de la semaine( le premier lundi et 7ème dimanche <br>il est possible d'ajouter fermée en lieu et place d'une plage de temps.</p>
                       <img src="{{ asset('image/fournisseur-modifier.PNG') }}" alt="accueil" class="col-md-10">
                      
-                      <img src="{{ asset('image/site-modifier-fournisseur.png') }}" alt="accueil" class="col-md-10">
+                      <img src="{{ asset('image/site-modifier-fourniseur.png') }}" alt="accueil" class="col-md-10">
                   </ol>
 
-                  <ol>
-                    <h2>Dupliquer une démarche</h2>
-                    <p> Pour dupliquer  une démarche existante dans une sous catégorie: cliquer sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
-                    <img src="{{ asset('image/ajouter-demarche.PNG') }}" alt="accueil" class="col-md-10">
-                     <p>Sélectionner une démarche et cliquer sur valider.</p>
-                </ol>
+                 
                 </ul>
             </p>
       </div>
