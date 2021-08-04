@@ -45,6 +45,8 @@ class ProviderController extends Controller
     public function store(Request $request)
     {
         //
+        $accueil=$request->accueil!==null?$request->accueil:"";
+        $horaires=$request->horaires!==null?$request->horaires:"";
         DB::table('providers')
         ->Insert(['provider_proposed_by'=>$request->nom,'provider_service'=>$request->service,'provider_phone'=>$request->phone,'provider_phone_timetable'=>$horaires,'provider_postal_address'=>$request->adresse,'provider_postal_address_timetable'=>$accueil,'provider_postal_address_timetable_rdv'=>$request->rdv,'provider_write_online'=>$request->url]);
         $providers =DB::table('providers')
