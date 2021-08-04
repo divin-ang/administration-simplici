@@ -39,6 +39,8 @@ Route::get('/demarche/supprimer/{id}/{name}', [App\Http\Controllers\ProcessContr
 Route::get('/demarche/supprimer/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/', [App\Http\Controllers\ProcessController::class, 'index'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}', [App\Http\Controllers\ProcessController::class, 'destroyEvryWhere'])->middleware('roles:admin');
+Route::get('/demarche/documents/{id}', [App\Http\Controllers\ProcessController::class, 'ajoutDocument'])->middleware('roles:admin');
+Route::post('/demarche/documents/{id}', [App\Http\Controllers\ProcessController::class, 'creerDocument'])->middleware('roles:admin');
 
 Route::post('/sous-categorie/modifier/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'update'])->middleware('roles:admin');
 Route::get('/sous-categorie/modifier/{id}/{containerName}/{name}', [App\Http\Controllers\SubcontainerController::class, 'updateForm'])->middleware('roles:admin');
@@ -62,6 +64,7 @@ Route::post('/services/creer', [App\Http\Controllers\ProviderController::class, 
 Route::get('/services/modifier/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'updateForm'])->name('provider_update_form')->middleware('roles:admin');
 Route::post('/services/modifier/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'update'])->name('provider_update')->middleware('roles:admin');
 Route::get('/services/afficher/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'show'])->name('provider_show')->middleware('roles:admin');
+
 //Route::get('/utilisateurs', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
 //Route::post('/password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset.token');
 

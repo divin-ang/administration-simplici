@@ -172,7 +172,20 @@ public function add(Request $request, $subcontainerId){
         ->get();
         return view("demarches/modifier",['process'=>$process[0],'providers'=>$providers,'subcontainerId'=>$subcontainerId,'provider_name'=>$provider_name[0]->provider_proposed_by]);
     }
+     public function ajoutDocument($id){
+       $documents= DB::table('process_annex_documents')
+        ->where('process_annex_documents.process_id',$id)
+        ->join('annex_documents','annex_documents.annex_document_id','=','process_annex_documents.annex_document_id')
+        ->select('annex_documents.*')
+        ->get();
 
+        $process= DB::table('processes')
+        ->where('processes.process_id',$id)
+        ->get();
+
+        return view('demarches/afficherDocuements',['ddocuments'=>$documents,'process'=>$process[0]]);
+
+     }
     /**
      * Remove the specified resource from storage.
      *
@@ -213,4 +226,5 @@ public function add(Request $request, $subcontainerId){
 
         return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
     }
+
 }
