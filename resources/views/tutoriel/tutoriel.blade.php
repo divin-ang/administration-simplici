@@ -90,10 +90,20 @@
                        </ol>
                        <ol>
                           <h2>Ajouter une démarche</h2>
-                          <p> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton ajouter créer une nouvelle démarche</p>
+                          <p> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton  créer une nouvelle démarche</p>
+                          <img src="{{ asset('image/demarche-page.PNG') }}" alt="accueil" class="col-md-10">
+                          <p>Ensuite completer le formulaire et cliquer sur valider.</p>
                           <img src="{{ asset('image/creer-demarche.PNG') }}" alt="accueil" class="col-md-10">
+                         
                           <img src="{{ asset('image/site-modifier-demarche.png') }}" alt="accueil" class="col-md-10">
                       </ol>
+
+                      <ol>
+                        <h2>Dupliquer une démarche</h2>
+                        <p> Pour dupliquer  une démarche existante dans une sous catégorie: cliquer sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
+                        <img src="{{ asset('image/ajouter-demarche.PNG') }}" alt="accueil" class="col-md-10">
+                        <p>Sélectionner une démarche et cliquer sur valider.</p>
+                    </ol>
                     </ul>
                 </p>
           </div>
