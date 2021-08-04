@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+<link rel="stylesheet" type="text/css" href="{{ asset('css/sousCategorie.css') }}" >
 <div class="container">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/sousCategorie.css') }}" >
+  
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
