@@ -58,7 +58,7 @@ Route::post('/utilisateur/modifier/{id}', [App\Http\Controllers\UserController::
 
 Route::get('/services/liste', [App\Http\Controllers\ProviderController::class, 'index'])->name('provider_list')->middleware('roles:admin');
 Route::get('/services/creer', [App\Http\Controllers\ProviderController::class, 'storeForm'])->name('provider_create')->middleware('roles:admin');
-Route::get('/services/creer', [App\Http\Controllers\ProviderController::class, 'store'])->name('provider_store')->middleware('roles:admin');
+Route::post('/services/creer', [App\Http\Controllers\ProviderController::class, 'store'])->name('provider_store')->middleware('roles:admin');
 Route::get('/services/modifier/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'updateForm'])->name('provider_update_form')->middleware('roles:admin');
 Route::post('/services/modifier/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'update'])->name('provider_update')->middleware('roles:admin');
 Route::get('/services/afficher/{id}/{name}', [App\Http\Controllers\ProviderController::class, 'show'])->name('provider_show')->middleware('roles:admin');
