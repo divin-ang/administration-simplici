@@ -72,6 +72,31 @@
                       </ul>
                   </p>
             </div>
+
+
+
+
+            <div>
+                <h2>  Les démarches</h2>
+                <p>Les démarches sont regroupées en sous catégories</p>
+                <p>
+                    L'administration permet de créer une nouvelle  démarche dans une sous catégorie donnée, de modifier une démarche existante,de supprimer une démarche d'une sous catégorie. Il est également possible de dupliquer une démarche: c'est à dire ajouter une démarche qui existe dans une autre sous catégorie.
+                    <ul>
+                       <ol>
+                           <h2>Afficher les démarches</h2>
+                           <p> Pour afficher les démarches d'une sous catégorie: cliquer sur le bouton afficher les démarches à droite du nom de la sous catégorie.</p>
+                           <img src="{{ asset('image/afficher-demarche.png') }}" alt="accueil" class="col-md-10">
+                          
+                       </ol>
+                       <ol>
+                          <h2>Ajouter une sous catégorie</h2>
+                          <p> Pour ajouter une sous catégorie  dans une rubrique: cliquer sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
+                          <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
+                          <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
+                      </ol>
+                    </ul>
+                </p>
+          </div>
     </div>
 </div>
 </div>
