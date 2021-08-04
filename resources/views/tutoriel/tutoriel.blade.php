@@ -23,10 +23,15 @@
             
 
 
-
+                  <div>
+                      <a href="#categorie">Les catégories</a>
+                      <a href="#sous-categorie">Les sous catégories</a>
+                      <a href="#demarche">Les démarches</a>
+                      <a href="#fournisseur">Les fournisseurs</a>
+                  </div>
                 <div class="item text-center">
                 <div> 
-                    <h2 class="tutoriel-title h2">Modifier une catégorie</h2>
+                    <h2 class="tutoriel-title h2" id="categorie">Modifier une catégorie</h2>
                     <p>Les catégories correspondent aux rubriques de la page d'accueil. <br>
                         
                     
@@ -52,7 +57,7 @@
                 </div>
             </div>
             <div class="item text-center">
-                  <h2 class="h2">  Les sous catégories.</h2>
+                  <h2 class="h2" id="sous-categorie">  Les sous catégories.</h2>
                   <p>Chaque rubrique de la page d'accueil est composée des sous catégories elles mêmes contenant les démarches.</p>
                   <p>
                       L'administration permet d'ajouter une sous catégorie à une rubrique, de modifier le nom d'une sous catégorie existante ou encore de supprimer la sous catégories.
@@ -77,7 +82,7 @@
 
 
             <div class="item text-center">
-                <h2 class="h2">  Les démarches</h2>
+                <h2 class="h2" id="demarche">  Les démarches</h2>
                 <p>Les démarches sont regroupées en sous catégories</p>
                 <p>
                     L'administration permet de créer une nouvelle  démarche dans une sous catégorie donnée, de modifier une démarche existante,de supprimer une démarche d'une sous catégorie. Il est également possible de dupliquer une démarche: c'est à dire ajouter une démarche qui existe dans une autre sous catégorie.
@@ -109,7 +114,7 @@
           </div>
 
           <div class="item text-center padding-xl ">
-            <h2 class="h2">Les fourniseurs des démarches</h2>
+            <h2 class="h2" id="fournisseur">Les fourniseurs des démarches</h2>
             <p class="padding-xl ">Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p>
                 L'administration permet de modifier les informations d'un fournisseur.
