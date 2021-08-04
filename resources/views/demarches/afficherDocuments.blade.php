@@ -28,7 +28,7 @@
                      <div class='row item'>
                      <span class="col">  {{$document->annex_document_name}}</span>
                      <a href="{{ url('demarche/document/modifier/'.$document->annex_document_id) }}" class="col modifier"> modifier le document</a>
-                     <a href="{{ url('demarche/document/supprimer/'.$user->$document->annex_document_id.'/'.$process->process_id) }}" class="col supprimer">supprimer le document</a>
+                     <a href="{{ url('demarche/document/supprimer/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col supprimer">supprimer le document</a>
                  </div>
                      @endforeach
                  
