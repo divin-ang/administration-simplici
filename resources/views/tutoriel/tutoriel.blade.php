@@ -40,8 +40,8 @@
                         
                         </div>
                         <p>Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquer sur valider.</p>
-                        <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class="img-fluid picture ">
-                        <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="  img-fluid">
+                        <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class=" picture ">
+                        <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="">
                   </div>
   
                       
