@@ -10,7 +10,7 @@
                 <div class="card-body">
                    
 
-         <form  action="{{url('demarche/document/creer/'.$annex_document_id.'/'.$process_id)  }}" method="POST">
+         <form  action="{{url('demarche/document/creer/'.$process_id)  }}" method="POST">
          @csrf
          <div class="form-group row">
          <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }} *</label>

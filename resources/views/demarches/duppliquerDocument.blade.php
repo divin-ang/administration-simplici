@@ -10,7 +10,7 @@
                 <div class="card-body">
                    
 
-         <form  action="{{url('demarche/ajouter/'.$subcontainer_id)  }}" method="POST">
+         <form  action="{{url('demarche/documents/duppliquer')  }}" method="POST">
          @csrf
        
         <div class="form-group row">
