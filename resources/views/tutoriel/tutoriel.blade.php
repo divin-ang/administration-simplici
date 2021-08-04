@@ -85,8 +85,8 @@
                        <ol>
                            <h2>Afficher les démarches</h2>
                            <p> Pour afficher les démarches d'une sous catégorie: cliquer sur le bouton afficher les démarches à droite du nom de la sous catégorie.</p>
-                           <img src="{{ asset('image/afficher-demarche.PNG') }}" alt="afficher les demarches" class="col-md-10">
-                          
+                           <img src="{{ asset('image/afficher-demarches.png') }}" alt="afficher les demarches" class="col-md-10">
+                           
                        </ol>
                        <ol>
                           <h2>Ajouter une démarche</h2>
