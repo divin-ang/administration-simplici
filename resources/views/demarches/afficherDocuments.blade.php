@@ -25,15 +25,15 @@
                     <h2>Aucun document n'est renseigné pour cette démarche. </h2>
                 @endif
                 <div class="row">
-                    <a href="{{ url('demarche/document/creer/'.$process->process_id) }}" class="col"> Créer  un document</a>
-                    <a href="{{ url('demarche/document/dupliquer/'.$process->process_id) }}" class="col"> Ajouter un document existant</a>
+                    <a href="{{ url('demarche/documents/creer/'.$process->process_id) }}" class="col"> Créer  un document</a>
+                    <a href="{{ url('demarche/documents/dupliquer/'.$process->process_id) }}" class="col"> Ajouter un document existant</a>
               
                 </div>
                  @foreach($documents as $document)
                      <div class='row item'>
                      <span class="col-9">  {{$document->annex_document_name}}</span>
-                     <a href="{{ url('demarche/document/modifier/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col"> modifier le document</a>
-                     <a href="{{ url('demarche/document/supprimer/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col supprimer">supprimer le document</a>
+                     <a href="{{ url('demarche/documents/modifier/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col"> modifier le document</a>
+                     <a href="{{ url('demarche/documents/supprimer/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col supprimer">supprimer le document</a>
                  </div>
                      @endforeach
                  
