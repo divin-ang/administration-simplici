@@ -194,6 +194,46 @@ public function add(Request $request, $subcontainerId){
         ->get();
         return view('demarches/creerDocument',['process'=>$process[0]]);
      }
+     public function creerDocument(Request $request,$id){
+         
+                  
+        $documentId=DB::table('annex_document')
+        ->Insert(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]);
+        DB::table('process_annex_document')
+        ->Insert(['annex_document_id'=>$documentId,'process_id'=>$id]);
+        
+        
+        $process= DB::table('processes')
+        ->where('processes.process_id',$id)
+        ->get();
+        return view('demarches/afficherDocument',['process'=>$process[0]]);
+     }
+
+
+
+     public function duppliquerDocumentForm($id){
+         
+          
+        $process= DB::table('processes')
+        ->where('processes.process_id',$id)
+        ->get();
+        return view('demarches/duppliquerDocument',['process'=>$process[0]]);
+     }
+
+     public function duppliquerDocument(Request $request,$id){
+         
+          
+       
+        DB::table('process_annex_document')
+        ->Insert(['annex_document_id'=>$request->annex_document_id,'process_id'=>$id]);
+        
+        
+        $process= DB::table('processes')
+        ->where('processes.process_id',$id)
+        ->get();
+        return view('demarches/afficherDocument',['process'=>$process[0]]);
+     }
+
     /**
      * Remove the specified resource from storage.
      *
