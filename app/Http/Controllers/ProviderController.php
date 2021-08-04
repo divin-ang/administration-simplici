@@ -36,9 +36,20 @@ class ProviderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function storeForm(Request $request)
+    {
+        //
+        return view('provider/creer');
+    }
+    
     public function store(Request $request)
     {
         //
+        DB::table('providers')
+        ->Insert(['provider_proposed_by'=>$request->nom,'provider_service'=>$request->service,'provider_phone'=>$request->phone,'provider_phone_timetable'=>$horaires,'provider_postal_address'=>$request->adresse,'provider_postal_address_timetable'=>$accueil,'provider_postal_address_timetable_rdv'=>$request->rdv,'provider_write_online'=>$request->url]);
+        $providers =DB::table('providers')
+        ->get();
+        return  view('provider/afficher',['providers'=>$providers]);
     }
 
     /**
