@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/tutoriel.css') }}" >
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
