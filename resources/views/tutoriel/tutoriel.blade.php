@@ -85,14 +85,14 @@
                        <ol>
                            <h2>Afficher les démarches</h2>
                            <p> Pour afficher les démarches d'une sous catégorie: cliquer sur le bouton afficher les démarches à droite du nom de la sous catégorie.</p>
-                           <img src="{{ asset('image/afficher-demarche.png') }}" alt="accueil" class="col-md-10">
+                           <img src="{{ asset('image/afficher-demarche.PNG') }}" alt="afficher les demarches" class="col-md-10">
                           
                        </ol>
                        <ol>
-                          <h2>Ajouter une sous catégorie</h2>
-                          <p> Pour ajouter une sous catégorie  dans une rubrique: cliquer sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
-                          <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
-                          <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
+                          <h2>Ajouter une démarche</h2>
+                          <p> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton ajouter créer une nouvelle démarche</p>
+                          <img src="{{ asset('image/creer-demarche.PNG') }}" alt="accueil" class="col-md-10">
+                          <img src="{{ asset('image/site-modifier-demarche.png') }}" alt="accueil" class="col-md-10">
                       </ol>
                     </ul>
                 </p>
