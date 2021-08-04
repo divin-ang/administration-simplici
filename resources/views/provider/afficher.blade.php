@@ -23,6 +23,7 @@
                   
                 </div>
                 <div>
+                    <a href="{{ url('services/creer')}}">Créer un fournisseur</a>
                  <div>
                
 
