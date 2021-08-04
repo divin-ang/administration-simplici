@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/tutoriel.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/sousCategorie.css') }}" >
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -26,7 +26,7 @@
 
                  <div class="item">
                     <div> 
-                        <h2 class="title">Modifier une catégorie</h2>
+                        <h2 class="tutoriel-title">Modifier une catégorie</h2>
                         <p>Les catégories correspondent aux rubriques de la page d'accueil. <br>
                            Pour modifier une catégorie : cliquer sur le bouton modifier à droite du nom de la catégorie concernée.
                         
@@ -40,8 +40,8 @@
                         
                         </div>
                         <p>Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquer sur valider.</p>
-                        <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class=" picture ">
-                        <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="">
+                        <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class="img-fluid picture ">
+                        <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="  img-fluid">
                   </div>
   
                       
