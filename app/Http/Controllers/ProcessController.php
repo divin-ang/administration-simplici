@@ -211,7 +211,7 @@ public function add(Request $request, $subcontainerId){
 
 
 
-     public function duppliquerDocumentForm($id){
+     public function dupliquerDocumentForm($id){
          
           
         $process= DB::table('processes')
@@ -220,7 +220,7 @@ public function add(Request $request, $subcontainerId){
         return view('demarches/duppliquerDocument',['process'=>$process[0]]);
      }
 
-     public function duppliquerDocument(Request $request,$id){
+     public function dupliquerDocument(Request $request,$id){
          
           
        
