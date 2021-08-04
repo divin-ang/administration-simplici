@@ -26,7 +26,7 @@
                   <div>
                       <ul>
                           <ol>
-                            <a href="#categorie h2">Les catégories</a>
+                            <a href="#categorie">Les catégories</a>
                             
                           </ol>
                           <ol>
