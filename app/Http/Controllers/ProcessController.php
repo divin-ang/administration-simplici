@@ -186,6 +186,14 @@ public function add(Request $request, $subcontainerId){
         return view('demarches/afficherDocuments',['documents'=>$documents,'process'=>$process[0]]);
 
      }
+     public function creerForm($id){
+         
+          
+        $process= DB::table('processes')
+        ->where('processes.process_id',$id)
+        ->get();
+        return view('demarches/creerDocument',['process'=>$process[0]]);
+     }
     /**
      * Remove the specified resource from storage.
      *
