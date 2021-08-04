@@ -24,7 +24,7 @@
 
 
 
-                <div class="item">
+                <div class="item text-center">
                 <div> 
                     <h2 class="tutoriel-title">Modifier une catégorie</h2>
                     <p>Les catégories correspondent aux rubriques de la page d'accueil. <br>
