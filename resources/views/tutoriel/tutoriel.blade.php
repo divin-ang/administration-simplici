@@ -108,23 +108,23 @@
                 </p>
           </div>
 
-          <div class="item text-center">
+          <div class="item text-center padding-xl ">
             <h2>Les fourniseurs des démarches</h2>
-            <p>Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
+            <p class="padding-xl ">Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p>
                 L'administration permet de modifier les informations d'un fournisseur.
                 <ul>
                    <ol>
                        <h2>Afficher les fournisseurs</h2>
-                       <p> Pour afficher les fournisseurs des démarches, sur la page d'accueil cliquer sur les fournisseur des démarches.</p>
+                       <p class="padding-xl "> Pour afficher les fournisseurs des démarches, sur la page d'accueil cliquer sur les fournisseur des démarches.</p>
                        <img src="{{ asset('image/afficher-fournisseur.PNG') }}" alt="afficher les demarches" class="col-md-10">
                        
                    </ol>
-                   <ol>
+                   <ol class="padding-xl ">
                       <h2>Modifier les informations d'un fournisseur </h2>
-                      <p> Cliquer sur le bouton modifier à droite du nom du fourniseur.</p>
-                      <img src="{{ asset('image/liste-fourniseur.PNG') }}" alt="accueil" class="col-md-10">
-                      <p>Ensuite completer le formulaire en pretant une attention aux champs horaires. <br>
+                      <p class="padding-xl "> Cliquer sur le bouton modifier à droite du nom du fourniseur.</p>
+                      <img src="{{ asset('image/liste-fourniseur.PNG') }}" alt="accueil" class="col-md-10 ">
+                      <p class="padding-xl ">Ensuite completer le formulaire en pretant une attention aux champs horaires. <br>
                     les plages horaires de chaque jour sont séparés par des point-virgule (;), Vous pouver ajouter du texte en le mettant entre guillemets. <br>
                 L'ordre des plages horaires correpond aux jours de la semaine( le premier lundi et 7ème dimanche <br>il est possible d'ajouter fermée en lieu et place d'une plage de temps.</p>
                       <img src="{{ asset('image/fournisseur-modifier.PNG') }}" alt="accueil" class="col-md-10">
