@@ -21,20 +21,6 @@
                  <div>
                 
 
-                <div class="item">
-                  <div> 
-                      <h2 class="title">Modifier une catégorie</h2>
-                      <div class="row">
-
-                        <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col img-fluid accueil">
-                        <img src="{{ asset('image/cat-modifier.PNG') }}" alt="accueil" class="col img-fluid accueil">
-                      </div>
-                </div>
-
-                    
-                 
-                 </div>
-
 
 
                  <div class="item">
@@ -53,7 +39,7 @@
                         
                         </div>
                         <p>Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquer sur valider.</p>
-                        <img src="{{ asset('image/cat-modifier-form.png') }}" alt="accueil" class="img-fluid accueil">
+                        <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class="img-fluid accueil">
                         <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="  img-fluid accueil">
                   </div>
   
