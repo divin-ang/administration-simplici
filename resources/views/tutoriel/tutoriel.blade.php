@@ -61,12 +61,13 @@
                              <h2>Afficher les sous catégorie.</h2>
                              <p> Pour afficher les sous catégories d'une rubrique: cliquer sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
                              <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
-                             <img src="{{ asset('image/site-sous-categorie.png') }}" alt="accueil" class="col-md-10">
+                            
                          </ol>
                          <ol>
                             <h2>Ajouter une sous catégorie</h2>
                             <p> Pour ajouter une sous catégorie  dans une rubrique: cliquer sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
-                            <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
+                            <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
+                            <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
                         </ol>
                       </ul>
                   </p>
