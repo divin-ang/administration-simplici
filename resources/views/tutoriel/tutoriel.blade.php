@@ -26,19 +26,32 @@
                   <div>
                       <ul>
                           <ol>
-                            <a href="#categorie">Les catégories</a>
-                           
+                            <a href="#categorie h2">Les catégories</a>
+                            
                           </ol>
                           <ol>
                             <a href="#sous-categorie">Les sous catégories</a>
+                            <ul>
+                                <ol> <a href="#afficher-sous-categorie"></a> Afficher les sous catégories</ol>
+                                <ol><a href="#modifier-sous-categorie"></a> Modifier une sous catégorie</ol>
+                                <ol><a href="#ajouter-sous-categorie"></a> Modifier une sous catégorie</ol>
+
+                            </ul>
+                           
+                          </ol>
+                          <ol>
+                            <a href="#demarche h2">Les démarches</a>
+                            <ul>
+                                <ol><a href="#afficher-demarche"></a>Afficher les démarches</ol>
+                                <ol><a href="#modifier-demarche"></a>Modifier une démarche</ol>
+                                <ol><a href="#creer-demarche"></a>Créer une démarche</ol>
+                                <ol><a href="#dupliquer-demarche"></a>Dupliquer une démarche</ol>
+
+                            </ul>
                             
                           </ol>
                           <ol>
-                            <a href="#demarche">Les démarches</a>
-                            
-                          </ol>
-                          <ol>
-                            <a href="#fournisseur">Les fournisseurs</a>
+                            <a href="#fournisseur h2">Les fournisseurs</a>
                           </ol>
                       </ul>
                   </div>
