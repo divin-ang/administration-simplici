@@ -34,8 +34,8 @@
                         <div class="row">
 
   
-                          <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="img-fluid accueil ">
-                          <img src="{{ asset('image/cat-modifier.PNG') }}" alt="accueil" class="  img-fluid">
+                          <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col-md-8">
+                          <img src="{{ asset('image/cat-modifier.PNG') }}" alt="accueil" class="  col-md-8">
 
                         
                         </div>
