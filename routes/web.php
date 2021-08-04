@@ -40,8 +40,8 @@ Route::get('/demarche/supprimer/{id}/{subcontainerId}', [App\Http\Controllers\Pr
 Route::get('/demarche/supprimer/', [App\Http\Controllers\ProcessController::class, 'index'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}', [App\Http\Controllers\ProcessController::class, 'destroyEvryWhere'])->middleware('roles:admin');
 Route::get('/demarche/documents/{id}', [App\Http\Controllers\ProcessController::class, 'ajoutDocument'])->middleware('roles:admin');
-Route::get('/demarche/documents/creer/{id}/{process_id}', [App\Http\Controllers\ProcessController::class, 'creerDocumentForm'])->middleware('roles:admin');
-Route::get('/demarche/documents/dupliquer/{id}/{process_id}', [App\Http\Controllers\ProcessController::class, 'dupliquerDocumentForm'])->middleware('roles:admin');
+Route::get('/demarche/documents/creer/{id}', [App\Http\Controllers\ProcessController::class, 'creerDocumentForm'])->middleware('roles:admin');
+Route::get('/demarche/documents/dupliquer/{id}', [App\Http\Controllers\ProcessController::class, 'dupliquerDocumentForm'])->middleware('roles:admin');
 Route::post('/demarche/documents/creer/{id}', [App\Http\Controllers\ProcessController::class, 'creerDocument'])->middleware('roles:admin');
 Route::post('/demarche/documents/dupliquer/{id}', [App\Http\Controllers\ProcessController::class, 'dupliquerDocument'])->middleware('roles:admin');
 Route::get('/demarche/documents/modifier/{id}/{process_id}', [App\Http\Controllers\ProcessController::class, 'modifierDocumentForm'])->middleware('roles:admin');
