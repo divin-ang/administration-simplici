@@ -20,11 +20,11 @@
                 <div>
                  <div>
                         
-                        <div class="row">
+                     
                             <p>Voulez vous vraiement supprimer la sous catégorie :{{$sous_categorie->subcontainer_name}} ?</p>
                   
-                            <a href="{{ url('categorie/'.$sous_categorie->container_id.'/'.$container_name) }}" class=" ">Annuler</a>
-                            <a href="{{ url('sous-categorie/supprimer/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->container_id) }}" class="">supprimer</a>
+                            <a href="{{ url('categorie/'.$sous_categorie->container_id.'/'.$container_name) }}" class="col">Annuler</a>
+                            <a href="{{ url('sous-categorie/supprimer/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->container_id) }}" class="col">supprimer</a>
                      
                         </div>
 
