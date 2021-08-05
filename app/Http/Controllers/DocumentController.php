@@ -101,7 +101,7 @@ class DocumentController extends Controller
          ->where('annex_document_id', $id)  
         
          ->update(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]); 
-         $documents=DB::table('process_annex_documents')
+         $documents=DB::table('annex_documents')
          ->where('process_annex_documents.process_id',$processId)
          ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
          ->get();
@@ -115,7 +115,7 @@ class DocumentController extends Controller
     $process= DB::table('processes')
     ->where('processes.process_id',$id)
     ->get();
-    $documents=DB::table('process_annex_documents')
+    $documents=DB::table('annex_documents')
     ->where('process_annex_documents.process_id',$processId)
     ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
     ->get();
