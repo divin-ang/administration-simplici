@@ -19,10 +19,10 @@
                </div>
            
            <div class="col-md-12">
-             <select class="form-control "  name="process_id" required >
+             <select class="form-control "  name="annex_document_id" required >
 
                       @foreach($documents as $document)
-                        <option value="{!! $document->annex_document_id !!}">{{$document->annex_document_name}}</option>
+                        <option value="{!! $document->annex_document_id !!}" >{{$document->annex_document_name}}</option>
                        
                     @endforeach
              </select>
