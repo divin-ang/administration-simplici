@@ -32,8 +32,8 @@
                  @foreach($documents as $document)
                      <div class='row item'>
                      <span class="col-9">  {{$document->annex_document_name}}</span>
-                     <a href="{{ url('demarche/documents/modifier/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col"> modifier le document</a>
-                     <a href="{{ url('demarche/documents/supprimer/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col supprimer">supprimer le document</a>
+                     <a href="{{ url('demarche/documents/modifier/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col"> modifier</a>
+                     <a href="{{ url('demarche/documents/supprimer/'.$document->annex_document_id.'/'.$process->process_id) }}" class="col supprimer">supprimer</a>
                  </div>
                      @endforeach
                  
