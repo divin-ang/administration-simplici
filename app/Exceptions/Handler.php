@@ -18,17 +18,7 @@ class Handler extends ExceptionHandler
         //
     ];
 
-    public function render($request, Exception $exception)
-{
-    // Render well-known exceptions here
-
-    // Otherwise display internal error message
-    if(!env('APP_DEBUG', false)){
-        return view('errors.500');
-    } else {
-        return parent::render($request, $exception);
-    }
-}
+    
 
     /**
      * A list of the inputs that are never flashed for validation exceptions.
@@ -52,5 +42,13 @@ class Handler extends ExceptionHandler
             //
         });
     }
+    protected function renderHttpException(HttpException $e)
+{
+    if ($e->getStatusCode() === 500 && env('APP_DEBUG') === true) {
+        // Display Laravel's default error message with appropriate error information
+        return $this->convertExceptionToResponse($e);
+    }
+    return parent::renderHttpException($e); // Continue as normal 
+}
     
 }
