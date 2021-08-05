@@ -22,7 +22,7 @@
                     <h2>Voulez vous vraiement supprimer la démarche :{{$demarche->process_name}} ?</h2>
                     <div class="row">
                         <a href="{{ url('demarches/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->subcontainer_name) }}" class="col-3 afficher">Annuler</a>
-                        <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col supprimer">Supprimer</a>
+                        <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$sous_categorie->subcontainer_id) }}" class="col supprimer">Supprimer</a>
                     </div>
 
                     
