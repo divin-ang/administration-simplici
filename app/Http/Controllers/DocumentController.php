@@ -35,7 +35,7 @@ class DocumentController extends Controller
       ->where('annex_document_id',$id)
       ->get();
 
-      return view('demarches/supprimerPartoutForm',['documents'=>$documents]);
+      return view('demarches/supprimerDocument',['document'=>$documents|0]);
 
 
 
