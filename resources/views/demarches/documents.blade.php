@@ -29,7 +29,7 @@
                      <div class='row item'>
                      <span class="col-9">  {{$document->annex_document_name}}</span>
                     
-                     <a href="{{ url('demarche/documents/supprimer-tout/'.$document->annex_document_id) }}" class="col supprimer">supprimer</a>
+                     <a href="{{ url('demarche/documents/supprimer-document/'.$document->annex_document_id) }}" class="col supprimer">supprimer</a>
                  </div>
                      @endforeach
                  
