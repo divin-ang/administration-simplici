@@ -32,9 +32,15 @@ class DocumentController extends Controller
       }
       public function creerDocument(Request $request,$id){
           
+
+        $link =$request->link;
+        if($link===null){
+            $link="";
+        }
+
                    
          $documentId=DB::table('annex_documents')
-         ->InsertGetId(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]);
+         ->InsertGetId(['annex_document_name'=>$request->nom,'annex_document_link'=>$link]);
          DB::table('process_annex_documents')
          ->Insert(['annex_document_id'=>$documentId,'process_id'=>$id]);
          
@@ -97,10 +103,15 @@ class DocumentController extends Controller
       }
  
       public function modifierDocument($id,$processId){
+          
+        $link =$request->link;
+        if($link===null){
+            $link="";
+        }
          DB::table('annex_documents')
          ->where('annex_document_id', $id)  
         
-         ->update(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]); 
+         ->update(['annex_document_name'=>$request->nom,'annex_document_link'=>$link]); 
          $documents=DB::table('process_annex_documents')
          ->where('process_annex_documents.process_id',$processId)
          ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
@@ -113,7 +124,7 @@ class DocumentController extends Controller
     ->where('annex_document_id',$id)
     ->delete();
     $process= DB::table('processes')
-    ->where('processes.process_id',$id)
+    ->where('processes.process_id',$processId)
     ->get();
     $documents=DB::table('process_annex_documents')
     ->where('process_annex_documents.process_id',$processId)
