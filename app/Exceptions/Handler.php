@@ -47,9 +47,7 @@ class Handler extends ExceptionHandler
     {
         if (!env('APP_DEBUG', false)) {
             return response()->view("errors.500");
-        } else {
-            return parent::render($request, $exception);
-        }
+        } 
     }
     
 }
