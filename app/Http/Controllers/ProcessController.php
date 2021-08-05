@@ -239,7 +239,7 @@ public function add(Request $request, $subcontainerId){
         $process= DB::table('processes')
         ->where('processes.process_id',$id)
         ->get();
-        $documents=DB::table('process_annex_documents')
+        $documents=DB::table('annex_documents')
        
         ->get();
         return view('demarches/afficherDocuments',['documents'=>$documents ,'process'=>$process[0]]);
