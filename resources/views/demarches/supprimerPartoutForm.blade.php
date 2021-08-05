@@ -34,17 +34,7 @@
         </div>
     </div>
 </div>
-@endsection
-</p>
-                  
-                        <div class="row">
-                            <a href="{{ url('demarches/') }}" class="col ">Annuler</a>
-                           <a href="{{ url('demarche/supprimer/'.$demarche->process_id) }}" class="col supprimer">Supprimer</a>
-                 
-                        </div>
 
-                    
-                </div>
             </div>
         </div>
     </div>
