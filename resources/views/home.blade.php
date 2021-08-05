@@ -5,11 +5,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-           <a href="{{ url('/utilisateurs') }}" class="user_link col ">Gérer les utilisateurs</a>
-           <a href="{{ url('/services'.'/liste') }}" class="user_link col">Les fourniseurs des démarches</a>
-           <a href="{{ url('/tutoriel') }}" class="user_link col">Tutoriel</a>
-           <a href="{{ url('/demarche'.'/documents') }}" class="user_link col">supprimer un document</a>
-                             <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link col">Supprimer une démarche</a>
+           <a href="{{ url('/utilisateurs') }}" class="user_link col-md-auto ">Gérer les utilisateurs</a>
+           <a href="{{ url('/services'.'/liste') }}" class="user_link col-md-auto">Les fourniseurs des démarches</a>
+           <a href="{{ url('/tutoriel') }}" class="user_link col-md-auto">Tutoriel</a>
+           <a href="{{ url('/demarche'.'/documents') }}" class="user_link col-md-auto">supprimer un document</a>
+                             <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link col-md-auto">Supprimer une démarche</a>
             <div class="card">
             
                              
