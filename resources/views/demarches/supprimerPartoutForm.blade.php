@@ -18,7 +18,7 @@
                 </div>
                 <div>
                  <div>
-                    <h2>Voulez vous vraiement supprimer la démarche de la base de données ?</h2>
+                    <h2>Voulez vous vraiement supprimer  cette démarche de la base de données  ?</h2>
                     <p>@extends('layouts.app')
 
 @section('content')
