@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">{{ __('Liste des documents') }} {{ $demarche->process_name}}</div>
+                <div class="card-header">{{  }} {{ $demarche->process_name}}</div>
 
                 <div class="card-body">
                     @if (session('status'))
