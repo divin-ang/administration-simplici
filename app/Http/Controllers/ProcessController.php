@@ -240,8 +240,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
         $documents=DB::table('process_annex_documents')
-        ->where('process_annex_documents.process_id',$id)
-        ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
+       
         ->get();
         return view('demarches/afficherDocuments',['documents'=>$documents ,'process'=>$process[0]]);
 
