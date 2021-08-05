@@ -21,12 +21,10 @@
                 <div>
                  <div>
                     <p>Voulez vous vraiement supprimer le document:{{$document->annex_document_name}}  de la base des données ?</p>
-                  
-                        <div class="row">
+              
                             <a href="{{ url('demarche/documents') }}" >Annuler</a>
-                           <a href="{{ url('demarche/supprimer-partout/'.$document->annex_document_id) }}" class="">Supprimer</a>
-                 
-                        </div>
+                           <a href="{{ url('demarche/document/supprimer-partout/'.$document->annex_document_id) }}" class="">Supprimer</a>
+                
 
                     
                 </div>
