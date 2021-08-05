@@ -10,7 +10,7 @@
                 <div class="card-body">
                    
 
-         <form  action="{{url('demarche/documents/dupliquer')  }}" method="POST">
+         <form  action="{{url('demarche/documents/dupliquer/'.$process->process_id)  }}" method="POST">
          @csrf
        
         <div class="form-group row">
