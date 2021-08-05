@@ -4,10 +4,11 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-11">
+        <div class="col-md-12">
            <a href="{{ url('/utilisateurs') }}" class="user_link ">Gérer les utilisateurs</a>
            <a href="{{ url('/services'.'/liste') }}" class="user_link ">Les fourniseurs des démarches</a>
            <a href="{{ url('/tutoriel') }}" class="user_link ">Tutoriel</a>
+           <a href="{{ url('/demarche'.'/documents') }}" class="user_link ">supprimer un document</a>
                              <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link">Supprimer une démarche partout</a>
             <div class="card">
             

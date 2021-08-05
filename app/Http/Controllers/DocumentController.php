@@ -7,7 +7,27 @@ use Illuminate\Support\Facades\DB;
 
 class DocumentController extends Controller
 {
-    //
+    //get documents
+
+    public function index(){
+        $documents= DB::table('process_annex_documents')
+        ->get();
+
+        return view('demarches/documents',['documents'=>$documents]);
+
+    }
+    public function supprimerDocumentPartout($id){
+      DB::table('annex_documents')
+      ->where('annex_document_id',$id)
+      ->delete();
+      $documents= DB::table('process_annex_documents')
+      ->get();
+
+      return view('demarches/documents',['documents'=>$documents]);
+
+
+
+    }
     public function ajoutDocument($id){
         $documents= DB::table('process_annex_documents')
          ->where('process_annex_documents.process_id',$id)

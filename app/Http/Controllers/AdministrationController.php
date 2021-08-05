@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class AdministrationController extends Controller
 {
-    //
+    
     function get(){
         $categories = DB::table('containers')
        
@@ -18,6 +18,7 @@ class AdministrationController extends Controller
 
         return view('admin/accueil',['categories'=>$categories]);
     }
+    //recupperer les catégories
     function  getCategory($id,$name){
         $Souscategories = DB::table('subcontainer')
         ->where('subcontainer.container_id', '=', $id)
@@ -25,6 +26,7 @@ class AdministrationController extends Controller
         return view('admin/categorie',['sousCategory'=>$Souscategories,'container_name'=>$name]);
 
     }
+    //recupperer les démarches
     function getDemarches($id){
         $processes = DB::table('subcontainer')
         ->where('subcontainer.subcontainer_id' ,'=',$id)
@@ -60,6 +62,7 @@ class AdministrationController extends Controller
         return  view('admin/provider',['providers'=>$providers]);
      
     }
+    //recupperer le tutoriel
     public function tutoriel (){
         return view('tutoriel/tutoriel');
     }
