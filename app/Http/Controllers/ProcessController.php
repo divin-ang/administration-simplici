@@ -191,7 +191,7 @@ public function add(Request $request, $subcontainerId){
 
     }
 
-    public function destroyEvryWhereForm($id){
+    public function destroyConfirm($id){
        
         $demarches =DB::table('processes')
         ->where('process_id',$id)
