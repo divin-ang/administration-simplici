@@ -53,6 +53,8 @@ Route::get('/demarche/documents/supprimer/{id}/{process_id}', [App\Http\Controll
 Route::get('/demarche/documents/', [App\Http\Controllers\DocumentController::class, 'index'])->middleware('roles:admin');
 Route::get('/demarche/documents/supprimer-partout/{id}', [App\Http\Controllers\DocumentController::class, 'supprimerDocumentPartout'])->middleware('roles:admin');
 
+Route::get('/demarche/documents/supprimer-partout/', [App\Http\Controllers\DocumentController::class, 'index'])->middleware('roles:admin');
+
 Route::post('/demarche/documents/dupliquer/{id}/{process_id}', [App\Http\Controllers\DocumentController::class, 'dupliquerDocumentForm'])->middleware('roles:admin');
 
 Route::post('/sous-categorie/modifier/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'update'])->middleware('roles:admin');

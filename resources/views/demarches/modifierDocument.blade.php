@@ -22,9 +22,9 @@
 
            
            <div class="form-group row">
-         <label for="link" class="col-md-4 col-form-label text-md-right">{{ __('Url') }} *</label>
+         <label for="link" class="col-md-4 col-form-label text-md-right">{{ __('Url') }} </label>
          <div class="col-md-6">
-          <input type='text' class="form-control"  value="'{{$annex_document->annex_document_link}}'" placeholder=" exemple: https://simplici.chambery.fr/" name="link" />
+          <input type='text' class="form-control"  value="{{$annex_document->annex_document_link}}" placeholder=" exemple: https://simplici.chambery.fr/" name="link" />
           
           
           </div>
