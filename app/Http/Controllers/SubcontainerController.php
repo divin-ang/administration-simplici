@@ -143,6 +143,6 @@ class SubcontainerController extends Controller
         $container_name=DB::table('containers')
         ->where('container_id',$containerId)
         ->get();
-        return view('sousCategories/supprimerForm',['sousCategory'=>$Souscategories,'container_name'=>$container_name[0]->container_name]);
+        return view('sousCategories/supprimerForm',['sous_categorie'=>$Souscategories,'container_name'=>$container_name[0]->container_name]);
     }
 }
