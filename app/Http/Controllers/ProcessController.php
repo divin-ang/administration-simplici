@@ -217,7 +217,7 @@ public function add(Request $request, $subcontainerId){
     public function destroyConfirm($processId,$subcontainerId){
 
         $Souscategories = DB::table('subcontainer')
-        ->where('subcontainer.container_id', '=', $id)
+        ->where('subcontainer_id', '=', $subcontainerId)
         ->get();
         $process =DB::table('processes')
         ->where('process_id',$processId)
