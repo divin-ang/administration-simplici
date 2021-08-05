@@ -7,6 +7,8 @@ use Throwable;
 
 class Handler extends ExceptionHandler
 {
+
+
     /**
      * A list of the exception types that are not reported.
      *
@@ -15,6 +17,18 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         //
     ];
+
+    public function render($request, Exception $exception)
+{
+    // Render well-known exceptions here
+
+    // Otherwise display internal error message
+    if(!env('APP_DEBUG', false)){
+        return view('errors.500');
+    } else {
+        return parent::render($request, $exception);
+    }
+}
 
     /**
      * A list of the inputs that are never flashed for validation exceptions.
