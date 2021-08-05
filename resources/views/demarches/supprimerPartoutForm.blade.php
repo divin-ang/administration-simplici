@@ -58,8 +58,8 @@
 </p>
                   
                         <div class="row">
-                            <a href="{{ url('demarches/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->subcontainer_name) }}" class="col ">Annuler</a>
-                           <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$sous_categorie->subcontainer_id) }}" class="col supprimer">Supprimer</a>
+                            <a href="{{ url('demarches/') }}" class="col ">Annuler</a>
+                           <a href="{{ url('demarche/supprimer/'.$demarche->process_id) }}" class="col supprimer">Supprimer</a>
                  
                         </div>
 
