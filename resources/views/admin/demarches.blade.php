@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<script src="{!!url('/js/jquery.min.js')!!}"></script>
 <script type="text/javascript">
     $('.btn-suppression').click(function (e) { 
         $('.suppression').css({display:'block'})
