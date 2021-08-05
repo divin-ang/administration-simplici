@@ -38,20 +38,18 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        $this->reportable(function (Exception $e) {
-            logger($e); 
-    
-            if($e->getStatusCode() == 500 ){
-                return redirect('/login');
-            }
+        $this->reportable(function (Throwable $e) {
+            //
         });
     }
     
     Public function render($request, Throwable $exception)
     {
         if (!env('APP_DEBUG', false)) {
-            return response()->view("errors.500");
-        } 
+          return  redirect('/login');
+        } else {
+            return parent::render($request, $exception);
+        }
     }
     
 }
