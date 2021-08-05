@@ -47,6 +47,11 @@ class Handler extends ExceptionHandler
         });
     }
     
-   
+    Public function render($request, Throwable $exception)
+    {
+        if (!env('APP_DEBUG', false)) {
+            return response()->view("errors.500");
+        } 
+    }
     
 }
