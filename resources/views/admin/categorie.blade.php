@@ -31,7 +31,7 @@
                     <div class="item row"> <span class="name col-6"> {{$sous_categorie->subcontainer_name}}</span>
                     <a href="{{ url('demarches/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->subcontainer_name) }}" class="col-3 afficher">Afficher les démarches</a>
                      <a href="{{ url('sous-categorie/modifier/'.$sous_categorie->subcontainer_id.'/'.$container_name.'/'.$sous_categorie->subcontainer_name) }}" class="col modifier" >Modifier</a>
-                      <a href="{{ url('sous-categorie/supprimer/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->container_id) }}" class="col supprimer">supprimer</a>
+                      <a href="{{ url('sous-categorie/supprimer/page/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->container_id) }}" class="col supprimer">supprimer</a>
                       </div>
                      @endforeach
 

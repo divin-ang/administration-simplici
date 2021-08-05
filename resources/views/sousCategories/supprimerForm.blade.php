@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">{{ __('Liste des documents') }} {{ $demarche->process_name}}</div>
+                <div class="card-header">{{ __('') }} {{ $sous_categorie->subcontainer__name}}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -19,12 +19,12 @@
                 </div>
                 <div>
                  <div>
-                    <h2>Voulez vous vraiement supprimer la démarche :{{$demarche->process_name}} ?</h2>
+                    <h2>Voulez vous vraiement supprimer la sous catégorie :{{$sous_categorie->subcontainer_name}} ?</h2>
                   
                         <div class="row">
-                            <a href="{{ url('demarches/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->subcontainer_name) }}" class="col ">Annuler</a>
-                           <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$sous_categorie->subcontainer_id) }}" class="col supprimer">Supprimer</a>
-                 
+                            <a href="{{ url('categorie/'.$sous_categorie->container_id.'/'.$container_name) }}" class=" col-4 afficher">Annuler</a>
+                            <a href="{{ url('sous-categorie/supprimer/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->container_id) }}" class="col supprimer">supprimer</a>
+                     
                         </div>
 
                     

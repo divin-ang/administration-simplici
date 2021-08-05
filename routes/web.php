@@ -60,6 +60,7 @@ Route::post('/sous-categorie/creer/{id}', [App\Http\Controllers\SubcontainerCont
 Route::get('/sous-categorie/creer/{id}/{name}', [App\Http\Controllers\SubcontainerController::class, 'storeForm'])->middleware('roles:admin');
 Route::post('/sous-categorie/supprimer/{id}', [App\Http\Controllers\SubcontainerController::class, 'suprimerForm'])->middleware('roles:admin');
 Route::get('/sous-categorie/supprimer/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'destroy'])->middleware('roles:admin');
+Route::get('/sous-categorie/supprimer/page/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'destroyForm'])->middleware('roles:admin');
 Route::get('/administration', [App\Http\Controllers\AdministrationController::class, 'get'])->middleware('roles:admin');
 Route::get('/tutoriel', [App\Http\Controllers\AdministrationController::class, 'tutoriel'])->middleware('roles:admin');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('roles:admin');
