@@ -231,7 +231,7 @@ public function add(Request $request, $subcontainerId){
          
           
        
-        DB::table('process_annex_document')
+        DB::table('process_annex_documents')
         ->Insert(['annex_document_id'=>$request->annex_document_id,'process_id'=>$id]);
         
         
