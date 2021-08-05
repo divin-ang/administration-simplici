@@ -29,7 +29,7 @@
                       <div class="item row">
                         <span class="name col-8">  {{$demarche->process_name}}</span>
                     
-                     <a href="{{ url('demarche/supprimer/'.$demarche->process_id) }}" class="col-2 modifier">Supprimer</a>
+                     <a href="{{ url('demarche/supprimer/page/'.$demarche->process_id) }}" class="col-2 modifier">Supprimer</a>
                     </div>
        
                      @endforeach

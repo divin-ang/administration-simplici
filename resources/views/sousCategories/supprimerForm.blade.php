@@ -22,7 +22,7 @@
                     <h2>Voulez vous vraiement supprimer la sous catégorie :{{$sous_categorie->subcontainer_name}} ?</h2>
                   
                         <div class="row">
-                            <a href="{{ url('categorie/'.$sous_categorie->container_id.'/'.$container_name) }}" class=" col-4 afficher">Annuler</a>
+                            <a href="{{ url('categorie/'.$sous_categorie->container_id.'/'.$container_name) }}" class=" ">Annuler</a>
                             <a href="{{ url('sous-categorie/supprimer/'.$sous_categorie->subcontainer_id.'/'.$sous_categorie->container_id) }}" class="col supprimer">supprimer</a>
                      
                         </div>

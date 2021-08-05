@@ -190,6 +190,16 @@ public function add(Request $request, $subcontainerId){
 
 
     }
+
+    public function destroyEvryWhereForm($id){
+        DB::table('processes')
+        ->where('process_id',$id) ;
+        $demarches =DB::table('processes')
+        ->where('process_id',$id)
+        ->get();
+        return view('/demarches/supprimerPartoutForm',['demarches'=>$demarches[0]]);
+
+    }
     public function destroy($id,$subcontainerId)
     {
         //

@@ -40,6 +40,7 @@ Route::get('/demarche/supprimer/page/{id}/{subcontainerId}', [App\Http\Controlle
 Route::get('/demarche/supprimer/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/', [App\Http\Controllers\ProcessController::class, 'index'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}', [App\Http\Controllers\ProcessController::class, 'destroyEvryWhere'])->middleware('roles:admin');
+Route::get('/demarche/supprimer/page/{id}', [App\Http\Controllers\ProcessController::class, 'destroyEvryWhereForm'])->middleware('roles:admin');
 Route::get('/demarche/documents/{id}', [App\Http\Controllers\DocumentController::class, 'ajoutDocument'])->middleware('roles:admin');
 Route::get('/demarche/documents/creer/{id}', [App\Http\Controllers\DocumentController::class, 'creerDocumentForm'])->middleware('roles:admin');
 Route::get('/demarche/documents/dupliquer/{id}', [App\Http\Controllers\DocumentController::class, 'dupliquerDocumentForm'])->middleware('roles:admin');
