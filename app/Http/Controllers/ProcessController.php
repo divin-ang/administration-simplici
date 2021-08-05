@@ -199,7 +199,7 @@ public function add(Request $request, $subcontainerId){
                   
         $documentId=DB::table('annex_documents')
         ->Insert(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]);
-        DB::table('process_annex_document')
+        DB::table('process_annex_documents')
         ->Insert(['annex_document_id'=>$documentId,'process_id'=>$id]);
         
         
