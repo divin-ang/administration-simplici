@@ -222,7 +222,7 @@ public function add(Request $request, $subcontainerId){
         $process =DB::table('processes')
         ->where('process_id',$processId)
         ->get();
-        return view('demarches/destroyConfirm',['sousCategory'=>$Souscategories[0],'process'=>$process[0]]);
+        return view('demarches/destroyConfirm',['sousCategorie'=>$Souscategories[0],'process'=>$process[0]]);
     }
 
 }
