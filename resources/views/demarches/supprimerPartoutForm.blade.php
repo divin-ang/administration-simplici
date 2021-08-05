@@ -1,25 +1,5 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/user.css') }}" >
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="card">
-                <div class="card-header"> {{ $demarche->process_name}}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                </div>
-                <div>
-                 <div>
-                    <h2>Voulez vous vraiement supprimer  cette démarche de la base de données  ?</h2>
-                    <p>@extends('layouts.app')
 
 @section('content')
 <div class="container">
