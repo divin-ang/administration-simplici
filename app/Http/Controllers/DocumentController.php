@@ -30,13 +30,12 @@ class DocumentController extends Controller
     }
 
     public function supprimerDocumentPartoutForm($id){
-      DB::table('annex_documents')
-      ->where('annex_document_id',$id)
-      ->delete();
+    
       $documents= DB::table('annex_documents')
+      ->where('annex_document_id',$id)
       ->get();
 
-      return view('demarches/documents',['documents'=>$documents]);
+      return view('demarches/supprimerPartoutForm',['documents'=>$documents]);
 
 
 
