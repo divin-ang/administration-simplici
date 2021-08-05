@@ -10,7 +10,7 @@ class DocumentController extends Controller
     //get documents
 
     public function index(){
-        $documents= DB::table('process_annex_documents')
+        $documents= DB::table('annex_documents')
         ->get();
 
         return view('demarches/documents',['documents'=>$documents]);
@@ -20,7 +20,7 @@ class DocumentController extends Controller
       DB::table('annex_documents')
       ->where('annex_document_id',$id)
       ->delete();
-      $documents= DB::table('process_annex_documents')
+      $documents= DB::table('annex_documents')
       ->get();
 
       return view('demarches/documents',['documents'=>$documents]);
