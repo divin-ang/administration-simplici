@@ -9,7 +9,7 @@
            <a href="{{ url('/services'.'/liste') }}" class="user_link ">Les fourniseurs des démarches</a>
            <a href="{{ url('/tutoriel') }}" class="user_link ">Tutoriel</a>
            <a href="{{ url('/demarche'.'/documents'.'/supprimer-partout') }}" class="user_link ">supprimer un document</a>
-                             <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link">Supprimer une démarche partout</a>
+                             <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link">Supprimer une démarche</a>
             <div class="card">
             
                              
