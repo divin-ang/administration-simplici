@@ -214,7 +214,7 @@ public function add(Request $request, $subcontainerId){
         return view('admin/demarches',['demarches'=>$processes,'subcontainerId'=>$subcontainerId,'subcontainer_name'=>$subcontainer_name[0]->subcontainer_name]);
     }
 
-    public function destroyForm($processId,$subcontainerId){
+    public function destroyConfirm($processId,$subcontainerId){
 
         $Souscategories = DB::table('subcontainer')
         ->where('subcontainer.container_id', '=', $id)
