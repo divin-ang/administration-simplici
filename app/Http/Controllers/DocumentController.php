@@ -105,7 +105,7 @@ class DocumentController extends Controller
          ->where('process_annex_documents.process_id',$processId)
          ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
          ->get();
-         return view('demarches/modifierDocument',[ 'annex_document'=>$documents, 'process'=>$process[0]]);
+         return view('demarches/afficherDocuments',[ 'documents'=>$documents, 'process'=>$process[0]]);
      }
   public function supprimerDocument($id,$processId){
     DB::table('process_annex_documents')
@@ -120,7 +120,7 @@ class DocumentController extends Controller
     ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
     ->select('annex_documents.*')
     ->get();
-    return view('demarches/modifierDocument',[ 'annex_document'=>$documents, 'process'=>$process[0]]);
+    return view('demarches/afficherDocuments',[ 'documents'=>$documents, 'process'=>$process[0]]);
 
   }
 }
