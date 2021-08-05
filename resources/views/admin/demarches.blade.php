@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<script type="text/javascript">
+    $('.btn-suppression').click(function (e) { 
+        $('.suppression').css({display:'block'})
+        $('.btn-suppression').css({display:'none'})
+       
+        
+    })
+</script>
+
 <link rel="stylesheet" type="text/css" href="{{ asset('css/sousCategorie.css') }}" >
 <div class="container">
     <div class="row justify-content-center">
@@ -32,7 +41,10 @@
                         <span class="name col-8">  {{$demarche->process_name}}</span>
                     <a href="{{ url('demarche/modifier/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col modifier">Modifier</a>
                     <a href="{{ url('demarche/documents/'.$demarche->process_id) }}" class="col modifier"> documents</a>
-                     <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col supprimer">Supprimer</a>
+                     <button class="btn-suppression"> supprimer</button>
+                       <div  class="suppression" style="display: none;">
+                        <a href="{{ url('demarche/supprimer/'.$demarche->process_id.'/'.$subcontainerId) }}" class="col supprimer">Supprimer</a>
+                       </div>
                     </div>
        
                      @endforeach
