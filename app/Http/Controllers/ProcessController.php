@@ -196,7 +196,7 @@ public function add(Request $request, $subcontainerId){
         $demarches =DB::table('processes')
         ->where('process_id',$id)
         ->get();
-        return view('/demarches/supprimerPatoutForm',['demarche'=>$demarches[0]]);
+        return view('/demarches/supprimerPartoutForm',['demarche'=>$demarches[0]]);
 
     }
     public function destroy($id,$subcontainerId)
