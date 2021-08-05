@@ -23,7 +23,7 @@
                     <h2>Voulez vous vraiement supprimer la démarche :{{$demarche->process_name}}  de la base des données ?</h2>
                   
                         <div class="row">
-                            <a href="{{ url('demarches/') }}" class="col ">Annuler</a>
+                            <a href="{{ url('demarche/supprimer') }}" class="col ">Annuler</a>
                            <a href="{{ url('demarche/supprimer/'.$demarche->process_id) }}" class="col supprimer">Supprimer</a>
                  
                         </div>
