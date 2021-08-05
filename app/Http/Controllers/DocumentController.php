@@ -107,7 +107,7 @@ class DocumentController extends Controller
          ->get();
          return view('demarches/modifierDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
      }
-  public function supprimer($id,$processId){
+  public function supprimerDocument($id,$processId){
     DB::table('process_annex_documents')
     ->where('process_id',$processId)
     ->where('annex_document_id',$id)
