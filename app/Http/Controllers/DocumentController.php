@@ -112,6 +112,9 @@ class DocumentController extends Controller
     ->where('process_id',$processId)
     ->where('annex_document_id',$id)
     ->delete();
+    $process= DB::table('processes')
+    ->where('processes.process_id',$id)
+    ->get();
     $documents=DB::table('process_annex_documents')
     ->where('process_annex_documents.process_id',$processId)
     ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
