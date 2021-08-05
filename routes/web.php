@@ -36,6 +36,7 @@ Route::post('/demarche/creer/{id}', [App\Http\Controllers\ProcessController::cla
 Route::get('/demarche/ajouter/{id}/{name}', [App\Http\Controllers\ProcessController::class, 'addForm'])->middleware('roles:admin');
 Route::post('/demarche/ajouter/{id}', [App\Http\Controllers\ProcessController::class, 'add'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}/{name}', [App\Http\Controllers\ProcessController::class, 'destroy'])->middleware('roles:admin');
+Route::get('/demarche/supprimer/page/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'destroyConfirm'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'destroy'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/', [App\Http\Controllers\ProcessController::class, 'index'])->middleware('roles:admin');
 Route::get('/demarche/supprimer/{id}', [App\Http\Controllers\ProcessController::class, 'destroyEvryWhere'])->middleware('roles:admin');
@@ -46,7 +47,7 @@ Route::post('/demarche/documents/creer/{id}', [App\Http\Controllers\DocumentCont
 Route::post('/demarche/documents/dupliquer/{id}', [App\Http\Controllers\DocumentController::class, 'dupliquerDocument'])->middleware('roles:admin');
 Route::get('/demarche/documents/modifier/{id}/{process_id}', [App\Http\Controllers\DocumentController::class, 'modifierDocumentForm'])->middleware('roles:admin');
 Route::post('/demarche/documents/modifier/{id}/{process_id}', [App\Http\Controllers\DocumentController::class, 'modifierDocument'])->middleware('roles:admin');
-
+//////////////////////////////////
 Route::get('/demarche/documents/supprimer/{id}/{process_id}', [App\Http\Controllers\DocumentController::class, 'supprimerDocument'])->middleware('roles:admin');
 Route::get('/demarche/documents/', [App\Http\Controllers\DocumentController::class, 'index'])->middleware('roles:admin');
 Route::get('/demarche/documents/supprimer-partout/{id}', [App\Http\Controllers\DocumentController::class, 'supprimerDocumentPartout'])->middleware('roles:admin');
