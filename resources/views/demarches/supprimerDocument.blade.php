@@ -20,7 +20,7 @@
                 </div>
                 <div>
                  <div>
-                    <div class="row text-center">
+                   
                         
                           
                          <p >Voulez vous vraiement supprimer le document:{{$document->annex_document_name}}  de la base des données ?</p>
@@ -31,7 +31,6 @@
                             <a href="{{ url('demarche/documents/supprimer-partout/'.$document->annex_document_id) }}" class="col">Supprimer</a>
                       
 
-                    </div>
 
                     
                 </div>
