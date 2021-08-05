@@ -235,8 +235,35 @@ public function add(Request $request, $subcontainerId){
         $process= DB::table('processes')
         ->where('processes.process_id',$id)
         ->get();
-        return view('demarches/afficherDocument',['process'=>$process[0]]);
+        $documents=DB::table('annex_documents')
+        ->get();
+        return view('demarches/afficherDocuments',['documents'=>$documents ,'process'=>$process[0]]);
+
      }
+
+
+     public function modifierDocumentForm($id,$processId){
+
+        $process= DB::table('processes')
+        ->where('processes.process_id',$id)
+        ->get();
+        $documents=DB::table('annex_documents')
+        ->get();
+        return view('demarches/modifierDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
+
+     }
+
+     public function modifierDocument($id,$processId){
+        DB::table('annex_documents')
+        ->where('annex_document_id', $id)  
+       
+        ->update(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]); 
+        $documents=DB::table('process_annex_documents')
+        ->where('process_annex_documents',$processId)
+        ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
+        ->get();
+        return view('demarches/modifierDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
+    }
 
     /**
      * Remove the specified resource from storage.
