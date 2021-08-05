@@ -42,13 +42,6 @@ class Handler extends ExceptionHandler
             //
         });
     }
-    protected function renderHttpException(HttpException $e)
-{
-    if ($e->getStatusCode() === 500 && env('APP_DEBUG') === true) {
-        // Display Laravel's default error message with appropriate error information
-        return $this->convertExceptionToResponse($e);
-    }
-    return parent::renderHttpException($e); // Continue as normal 
-}
+    
     
 }
