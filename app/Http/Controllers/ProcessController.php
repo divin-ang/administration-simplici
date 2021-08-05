@@ -207,7 +207,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
         $documents=DB::table('process_annex_documents')
-        ->where('process_annex_documents',$id)
+        ->where('process_annex_documents.process_id',$id)
         ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
         ->get();
         return view('demarches/afficherDocuments',['documents'=>$documents ,'process'=>$process[0]]);
@@ -222,7 +222,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
         $documents=DB::table('process_annex_documents')
-        ->where('process_annex_documents',$id)
+        ->where('process_annex_documents.process_id',$id)
         ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
         ->get();
         return view('demarches/duppliquerDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
@@ -240,7 +240,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
         $documents=DB::table('process_annex_documents')
-        ->where('process_annex_documents',$id)
+        ->where('process_annex_documents.process_id',$id)
         ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
         ->get();
         return view('demarches/afficherDocuments',['documents'=>$documents ,'process'=>$process[0]]);
@@ -254,7 +254,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
         $documents=DB::table('process_annex_documents')
-        ->where('process_annex_documents',$processId)
+        ->where('process_annex_documents.process_id',$processId)
         ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
         ->get();
         return view('demarches/modifierDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
@@ -267,7 +267,7 @@ public function add(Request $request, $subcontainerId){
        
         ->update(['annex_document_name'=>$request->nom,'annex_document_link'=>$request->link]); 
         $documents=DB::table('process_annex_documents')
-        ->where('process_annex_documents',$processId)
+        ->where('process_annex_documents.process_id',$processId)
         ->join('annex_documents','process_annex_documents.annex_document_id','=','annex_documents.annex_document_id')
         ->get();
         return view('demarches/modifierDocument',[ 'documents'=>$documents, 'process'=>$process[0]]);
