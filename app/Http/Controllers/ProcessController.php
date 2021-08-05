@@ -194,9 +194,9 @@ public function add(Request $request, $subcontainerId){
     public function destroyEvryWhereForm($id){
        
         $demarches =DB::table('processes')
-        ->where('process_id',$id)
+       
         ->get();
-        return view('/demarches/supprimer',['demarche'=>$demarches[0]]);
+        return view('/demarches',['demarche'=>$demarches]);
 
     }
     public function destroy($id,$subcontainerId)
