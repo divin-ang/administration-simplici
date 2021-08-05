@@ -253,7 +253,7 @@ public function add(Request $request, $subcontainerId){
         ->where('processes.process_id',$id)
         ->get();
         $document=DB::table('annex_documents')
-        ->where('annex_documents.process_id',$id)
+        ->where('annex_document_id',$id)
        
         ->get();
         return view('demarches/modifierDocument',[ 'annex_document'=>$document[0], 'process'=>$process[0]]);
