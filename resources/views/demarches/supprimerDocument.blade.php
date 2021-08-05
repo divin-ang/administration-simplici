@@ -22,7 +22,9 @@
                  <div>
                     <div class="row">
                         
-                            <p class="row">Voulez vous vraiement supprimer le document:{{$document->annex_document_name}}  de la base des données ?</p>
+                            <div class="row">
+                                <p >Voulez vous vraiement supprimer le document:{{$document->annex_document_name}}  de la base des données ?</p>
+                            </div>
               
                          
                             <a href="{{ url('demarche/documents') }}"  class="col">Annuler</a>
