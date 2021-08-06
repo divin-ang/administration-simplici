@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
            <a href="{{ url('/utilisateurs') }}" class="user_link col-md-auto ">les utilisateurs</a>
-           <a href="{{ url('/services'.'/liste') }}" class="user_link col-md-auto">Les fourniseurs</a>
+           <a href="{{ url('/services'.'/liste') }}" class="user_link col-md-auto">Les services</a>
            <a href="{{ url('/tutoriel') }}" class="user_link col-md-auto">Tutoriel</a>
            <a href="{{ url('/demarche'.'/documents') }}" class="user_link col-md-auto">supprimer un document</a>
                              <a href="{{ url('/demarche'.'/supprimer') }}" class="user_link col-md-auto">Supprimer une démarche</a>

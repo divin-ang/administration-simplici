@@ -46,7 +46,7 @@
                               
                                 <ol><a href="#creer-demarche">Créer une démarche </a></ol>
                                 <ol><a href="#dupliquer-demarche">Dupliquer une démarche </a></ol>
-                                <ol><a href="#ajouter-un-document">ajouter un document dans une démarche démarche </a></ol>
+                                <ol><a href="#ajouter-un-document">Ajouter un document dans une démarche  </a></ol>
 
                             </ul>
                             
@@ -75,7 +75,7 @@
 
                     
                     </div>
-                    <p class="tutoriel-p">Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquez sur valider.</p>
+                    <p class="tutoriel-p">Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquer sur enregistrer.</p>
                     <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class="col-md-10 ">
                     <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="col-md-10">
                     </div>
@@ -88,19 +88,19 @@
             </div>
             <div class="tutoriel-item ">
                   <h2 class="tutoriel-title" id="sous-categorie">  Les sous catégories.</h2>
-                  <p>Chaque rubrique de la page d'accueil est composée des sous catégories elles mêmes contenant les démarches.</p>
+                  <p>Chaque rubrique de la page d'accueil est composée de sous catégories elles mêmes contenant les démarches.</p>
                   <p>
-                      L'administration permet d'ajouter une sous catégorie à une rubrique, de modifier le nom d'une sous catégorie existante ou encore de supprimer la sous catégories.
+                      L'administration permet d'ajouter une sous catégorie à une rubrique, de modifier le nom d'une sous catégorie existante ou encore de supprimer une sous catégorie.
                       <ul>
                          <ol>
-                             <h2  id="afficher-sous-categorie" class="tutoriel-title">Afficher les sous catégorie.</h2>
+                             <h2  id="afficher-sous-categorie" class="tutoriel-title">Afficher les sous catégories.</h2>
                              <p> Pour afficher les sous catégories d'une rubrique: cliquez sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
                              <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
                             
                          </ol>
                          <ol>
                             <h2 class="tutoriel-title" id="ajouter-sous-categorie">Ajouter une sous catégorie</h2>
-                            <p class="tutoriel-p"> Pour ajouter une sous catégorie  dans une rubrique: cliquez sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
+                            <p class="tutoriel-p"> Pour ajouter une sous catégorie  dans une rubrique: cliquez sur le bouton ajouter une nouvelle catégorie.</p>
                             <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
                             <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
                         </ol>
@@ -115,7 +115,7 @@
                 <h2 class="tutoriel-title" id="demarche">  Les démarches</h2>
                 <p class="tutoriel-p">Les démarches sont regroupées en sous catégories</p>
                 <p class="tutoriel-p">
-                    L'administration permet de créer une nouvelle  démarche dans une sous catégorie donnée, de modifier une démarche existante,de supprimer une démarche d'une sous catégorie. Il est également possible de dupliquer une démarche: c'est à dire ajouter une démarche qui existe dans une autre sous catégorie.
+                    L'administration permet de créer une nouvelle  démarche dans une sous catégorie donnée, de modifier une démarche existante, de supprimer une démarche d'une sous catégorie. Il est également possible de dupliquer une démarche: c'est à dire ajouter une démarche qui existe dans une autre sous catégorie.
                     <ul>
                        <ol>
                            <h2 class="tutoriel-title" id="afficher-demarche">Afficher les démarches</h2>
@@ -127,18 +127,18 @@
                           <h2 class="tutoriel-title" id="creer-demarche">Ajouter une démarche</h2>
                           <p class="tutoriel-p"> Pour ajouter une démarche  dans une sous catégorie: cliquez sur le bouton  créer une nouvelle démarche</p>
                           <img src="{{ asset('image/demarche-page.PNG') }}" alt="accueil" class="col-md-10">
-                          <p class="tutoriel-p">Ensuite completer le formulaire et cliquez sur valider.</p>
+                          <p class="tutoriel-p">Ensuite completer le formulaire et cliquez sur enregistrer.</p>
                           <img src="{{ asset('image/creer-demarche.PNG') }}" alt="accueil" class="col-md-10">
                          
                           <img src="{{ asset('image/site-modifier-demarche.png') }}" alt="accueil" class="col-md-10">
                       </ol>
                       <ol>
                         <h2 class="tutoriel-title" id="ajouter-un-document">Ajouter un document dans une démarche</h2>
-                        <p class="tutoriel-p"> Pour ajouter un document à  une démarche: cliquez sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré ajouter un document existant </p>
+                        <p class="tutoriel-p"> Pour ajouter un document à  une démarche: cliquez sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré, d'ajouter un document existant </p>
                         <img src="{{ asset('image/documents.PNG') }}" alt="accueil" class="col-md-10">
                         
                         <img src="{{ asset('image/creer-document.PNG') }}" alt="accueil" class="col-md-10">
-                          <p class="tutoriel-p">Ensuite completer le formulaire et cliqueZ sur valider.</p>
+                          <p class="tutoriel-p">Ensuite completer le formulaire et cliquez sur enregistrer.</p>
                         <img src="{{ asset('image/document-form.PNG') }}" alt="accueil" class="col-md-10">
                     </ol>
 
@@ -146,14 +146,14 @@
                         <h2 class="tutoriel-title" id="dupliquer-demarche" >Dupliquer une démarche</h2>
                         <p class="tutoriel-p"> Pour dupliquer  une démarche existante dans une sous catégorie: cliquez sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
                         <img src="{{ asset('image/ajouter-demarche.PNG') }}" alt="accueil" class="col-md-10">
-                         <p class="tutoriel-p">Sélectionner une démarche et cliquez sur valider.</p>
+                         <p class="tutoriel-p">Sélectionner une démarche et cliquez sur enregistrer.</p>
                     </ol>
                     </ul>
                 </p>
           </div>
 
           <div class="tutoriel-item  ">
-            <h2 class="tutoriel-title" id="fournisseur">Les servicess</h2>
+            <h2 class="tutoriel-title" id="fournisseur">Les services</h2>
             <p class="tutoriel-p ">Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p class="tutoriel-p">
                 L'administration permet de modifier les informations d'un fournisseur.
@@ -184,7 +184,7 @@
 
       <div class="tutoriel-item">
           <h2 class="tutoriel-title" id="base">Connexion au serveur et à  base de données</h2>
-          <p class="tutoriel-p"> pour se connecter à la base de données.
+          <p class="tutoriel-p"> Pour se connecter à la base de données.
               <ul>
                   <ol>
                     Aller sur le site ovh en cliquant <a href="https://www.ovh.com/fr/">ici</a>

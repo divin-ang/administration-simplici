@@ -13,21 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// il ya 2 roles dans l'application admin et user
 
 Route::get('/',[App\Http\Controllers\HomeController::class, 'index'])->middleware('roles:admin');
 Route::post('/compte',[App\Http\Controllers\ContactController::class, 'create'])->name('newUser')->middleware('roles:admin');
 Route::get('/compte',[App\Http\Controllers\ContactController::class, 'index'])->name('newcompte')->middleware('roles:admin');   
 
-Route::get('/attente',[App\Http\Controllers\HomeController::class, 'attente'])->name('attente')->middleware('roles:user');
+Route::get('/attente',[App\Http\Controllers\HomeController::class, 'attente'])->name('attente')->middleware('roles:user');// seule page accéssible à un utilisateur avec le rôle user
 Auth::routes();
 
 
 Route::post('/categorie/modifier/{id}', [App\Http\Controllers\ContainerController::class, 'update'])->middleware('roles:admin');
 
-
+//categorie
 Route::get('/categorie/{id}/{name}', [App\Http\Controllers\AdministrationController::class, 'getCategory'])->middleware('roles:admin');
 Route::get('/categorie/changer/{id}/{name}', [App\Http\Controllers\ContainerController::class, 'show'])->middleware('roles:admin');
+
+
+// routes pour les démarches
 Route::get('/demarches/{id}/{name}', [App\Http\Controllers\AdministrationController::class, 'getDemarches'])->middleware('roles:admin')->name('demarches');
 Route::get('/demarche/modifier/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'updateForm'])->middleware('roles:admin');
 Route::post('/demarche/modifier/{id}/{subcontainerId}', [App\Http\Controllers\ProcessController::class, 'update'])->middleware('roles:admin');
@@ -55,7 +58,7 @@ Route::get('/demarche/documents/supprimer-partout/{id}', [App\Http\Controllers\D
 Route::get('/demarche/documents/supprimer-document/{id}', [App\Http\Controllers\DocumentController::class, 'supprimerDocumentPartoutForm'])->middleware('roles:admin');
 
 Route::post('/demarche/documents/dupliquer/{id}/{process_id}', [App\Http\Controllers\DocumentController::class, 'dupliquerDocumentForm'])->middleware('roles:admin');
-
+// routes pour les sous categories
 Route::post('/sous-categorie/modifier/{id}/{containerId}', [App\Http\Controllers\SubcontainerController::class, 'update'])->middleware('roles:admin');
 Route::get('/sous-categorie/modifier/{id}/{containerName}/{name}', [App\Http\Controllers\SubcontainerController::class, 'updateForm'])->middleware('roles:admin');
 Route::post('/sous-categorie/creer/{id}', [App\Http\Controllers\SubcontainerController::class, 'store'])->middleware('roles:admin');
