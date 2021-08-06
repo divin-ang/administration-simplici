@@ -37,6 +37,7 @@
 .tutoriel-title{
    font-size: 18px;
    margin-top: 20px;
+   text-align: center;
 }
 .tutoriel-plan{
     font-size: 17px;
@@ -47,5 +48,6 @@
 .tutoriel-item{
     font-size: 17px;
     margin-top: 10%;
+    margin-left:5% ;
     
 }
