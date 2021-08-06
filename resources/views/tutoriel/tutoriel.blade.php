@@ -70,12 +70,12 @@
 
 
                         <img src="{{ asset('image/site-accueil.png') }}" alt="accueil" class="col-md-10">
-                        <p class="tutoriel-p"> Pour modifier une catégorie : cliquer sur le bouton modifier à droite du nom de la catégorie concernée.</p>
+                        <p class="tutoriel-p"> Pour modifier une catégorie : cliquez sur le bouton modifier à droite du nom de la catégorie concernée.</p>
                         <img src="{{ asset('image/cat-modifier.PNG') }}" alt="accueil" class="  col-md-10">
 
                     
                     </div>
-                    <p class="tutoriel-p">Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquer sur valider.</p>
+                    <p class="tutoriel-p">Il suffit de modifier les informations contenues dans le formulaire qui s'affiche et de cliquez sur valider.</p>
                     <img src="{{ asset('image/cat-form.PNG') }}" alt="accueil" class="col-md-10 ">
                     <img src="{{ asset('image/site-modifier-cat.png') }}" alt="accueil" class="col-md-10">
                     </div>
@@ -94,13 +94,13 @@
                       <ul>
                          <ol>
                              <h2  id="afficher-sous-categorie" class="tutoriel-title">Afficher les sous catégorie.</h2>
-                             <p> Pour afficher les sous catégories d'une rubrique: cliquer sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
+                             <p> Pour afficher les sous catégories d'une rubrique: cliquez sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
                              <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
                             
                          </ol>
                          <ol>
                             <h2 class="tutoriel-title" id="ajouter-sous-categorie">Ajouter une sous catégorie</h2>
-                            <p class="tutoriel-p"> Pour ajouter une sous catégorie  dans une rubrique: cliquer sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
+                            <p class="tutoriel-p"> Pour ajouter une sous catégorie  dans une rubrique: cliquez sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
                             <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
                             <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
                         </ol>
@@ -119,34 +119,34 @@
                     <ul>
                        <ol>
                            <h2 class="tutoriel-title" id="afficher-demarche">Afficher les démarches</h2>
-                           <p class="tutoriel-p"> Pour afficher les démarches d'une sous catégorie: cliquer sur le bouton afficher les démarches à droite du nom de la sous catégorie.</p>
+                           <p class="tutoriel-p"> Pour afficher les démarches d'une sous catégorie: cliquez sur le bouton afficher les démarches à droite du nom de la sous catégorie.</p>
                            <img src="{{ asset('image/afficher-demarches.png') }}" alt="afficher les demarches" class="col-md-10">
                            
                        </ol>
                        <ol>
                           <h2 class="tutoriel-title" id="creer-demarche">Ajouter une démarche</h2>
-                          <p class="tutoriel-p"> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton  créer une nouvelle démarche</p>
+                          <p class="tutoriel-p"> Pour ajouter une démarche  dans une sous catégorie: cliquez sur le bouton  créer une nouvelle démarche</p>
                           <img src="{{ asset('image/demarche-page.PNG') }}" alt="accueil" class="col-md-10">
-                          <p class="tutoriel-p">Ensuite completer le formulaire et cliquer sur valider.</p>
+                          <p class="tutoriel-p">Ensuite completer le formulaire et cliquez sur valider.</p>
                           <img src="{{ asset('image/creer-demarche.PNG') }}" alt="accueil" class="col-md-10">
                          
                           <img src="{{ asset('image/site-modifier-demarche.png') }}" alt="accueil" class="col-md-10">
                       </ol>
                       <ol>
                         <h2 class="tutoriel-title" id="ajouter-un-document">Ajouter un document dans une démarche</h2>
-                        <p class="tutoriel-p"> Pour ajouter un document à  une démarche: cliquer sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré ajouter un document existant </p>
+                        <p class="tutoriel-p"> Pour ajouter un document à  une démarche: cliquez sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré ajouter un document existant </p>
                         <img src="{{ asset('image/documents.PNG') }}" alt="accueil" class="col-md-10">
                         
                         <img src="{{ asset('image/creer-document.PNG') }}" alt="accueil" class="col-md-10">
-                          <p class="tutoriel-p">Ensuite completer le formulaire et cliquer sur valider.</p>
+                          <p class="tutoriel-p">Ensuite completer le formulaire et cliqueZ sur valider.</p>
                         <img src="{{ asset('image/document-form.PNG') }}" alt="accueil" class="col-md-10">
                     </ol>
 
                       <ol>
                         <h2 class="tutoriel-title" id="dupliquer-demarche" >Dupliquer une démarche</h2>
-                        <p class="tutoriel-p"> Pour dupliquer  une démarche existante dans une sous catégorie: cliquer sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
+                        <p class="tutoriel-p"> Pour dupliquer  une démarche existante dans une sous catégorie: cliquez sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
                         <img src="{{ asset('image/ajouter-demarche.PNG') }}" alt="accueil" class="col-md-10">
-                         <p class="tutoriel-p">Sélectionner une démarche et cliquer sur valider.</p>
+                         <p class="tutoriel-p">Sélectionner une démarche et cliquez sur valider.</p>
                     </ol>
                     </ul>
                 </p>
@@ -160,13 +160,13 @@
                 <ul>
                    <ol>
                        <h2 class="tutoriel-title">Creer et modifier les services</h2>
-                       <p class="tutoriel-p"> Pour afficher les services qui fournissent les démarches : sur la page d'accueil cliquer sur les services</p>
+                       <p class="tutoriel-p"> Pour afficher les services qui fournissent les démarches : sur la page d'accueil cliquez sur les services</p>
                        <img src="{{ asset('image/afficher-fourniseur.PNG') }}" alt="afficher les demarches" class="col-md-10">
                         
                    </ol>
                    <ol class="padding-xl ">
                       <h2 class="tutoriel-title">Modifier les informations d'un service </h2>
-                      <p class="tutoriel-p"> Cliquer sur le bouton modifier à droite du nom du service.</p>
+                      <p class="tutoriel-p"> cliquez sur le bouton modifier à droite du nom du service.</p>
                       <img src="{{ asset('image/liste-fourniseur.PNG') }}" alt="accueil" class="col-md-10 ">
                       <p class="tutoriel-p">Ensuite completer le formulaire en pretant une attention aux champs horaires. <br>
                     les plages horaires de chaque jour sont séparés par des point-virgule (;), Vous pouver ajouter du texte en le mettant entre guillemets. <br>
@@ -183,27 +183,29 @@
       </div>
 
       <div class="tutoriel-item">
-          <h2 class="tutoriel-title">Connexion au serveur et à a base de données</h2>
+          <h2 class="tutoriel-title" id="base">Connexion au serveur et à  base de données</h2>
           <p class="tutoriel-p"> pour se connecter à la base de données.
               <ul>
                   <ol>
                     Aller sur le site ovh en cliquant <a href="https://www.ovh.com/fr/">ici</a>
                   </ol>
                   <ol>
-                      Vous connecter à compte.
+                     En suite  connectez vous  à  votre compte.
                   </ol>
                   <ol>
-                     <p> sur la page d'accueil, cliquer sur l'onglet web cloud sur le menu horizontal en haut de la page.</p>
+                     <p>Une fois  sur la page d'accueil, cliquez sur l'onglet web cloud sur le menu horizontal en haut de la page.</p>
                       <img src="{{ asset('image/accueil-ovh.PNG') }}" alt="accueil" class="col-md-10">
-                      <p>sur la page suivante cliquer sur hébergements dans le menu vertical à gauche puis sur le nom de domaine(simpliciplus.fr)</p>
+                      <p>sur la page suivante cliquez sur hébergements dans le menu vertical à gauche puis sur le nom de domaine(simpliciplus.fr)</p>
                       
                       <img src="{{ asset('image/accueil-ovh2.PNG') }}" alt="accueil" class="col-md-10">
-                      <p>Sur la page suivante cliquer sur Base des données.</p>
+                      <p>Sur la page suivante cliquez sur Base des données.</p>
                       <img src="{{ asset('image/accueil-ovh3.PNG') }}" alt="accueil" class="col-md-10">
-                      <p>En suite cliquer sur les 3 points à du nom de la base de données </p>
+                      <p>En suite cliquez sur les 3 points à droite du nom de la base de données </p>
                       <img src="{{ asset('image/accueil-ovh4.PNG') }}" alt="accueil" class="col-md-10">
-                      <p>Puis sur PhpMyAdmin, en suite sur la page qui s'ouvre entrer les informations de connexion</p>
+                      <p>Puis Cliquez sur PhpMyAdmin, ensuite sur la page qui s'ouvre entreZ les informations de connexion</p>
                       <img src="{{ asset('image/accueil-ovh5.PNG') }}" alt="accueil" class="col-md-10">
+                      <p>Cliquez ensuite le nom de la base de données à gauche.</p>
+                      <img src="{{ asset('image/accueil-ovh6.PNG') }}" alt="accueil" class="col-md-10">
 
                   </ol>
               </ul>
