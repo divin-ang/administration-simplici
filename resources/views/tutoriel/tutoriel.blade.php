@@ -56,7 +56,7 @@
                           </ol>
                       </ul>
                   </div>
-                <div class="tutoriel-item text-center">
+                <div class="tutoriel-item ">
                 <div> 
                     <h2 class="tutoriel-title h2" id="categorie">Modifier une catégorie</h2>
                     <p class="tutoriel-p">Les catégories correspondent aux rubriques de la page d'accueil. <br>
@@ -83,20 +83,20 @@
                 
                 </div>
             </div>
-            <div class="tutoriel-item text-center">
-                  < class="" id="sous-categorie">  Les sous catégories.</>
+            <div class="tutoriel-item ">
+                  <h2 class="tutoriel-title" id="sous-categorie">  Les sous catégories.</h2>
                   <p>Chaque rubrique de la page d'accueil est composée des sous catégories elles mêmes contenant les démarches.</p>
                   <p>
                       L'administration permet d'ajouter une sous catégorie à une rubrique, de modifier le nom d'une sous catégorie existante ou encore de supprimer la sous catégories.
                       <ul>
                          <ol>
-                             < class="h3" id="afficher-sous-categorie">Afficher les sous catégorie.</>
+                             <h2  id="afficher-sous-categorie">Afficher les sous catégorie.</h2>
                              <p> Pour afficher les sous catégories d'une rubrique: cliquer sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
                              <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
                             
                          </ol>
                          <ol>
-                            < class="h3" id="ajouter-sous-categorie">Ajouter une sous catégorie</h2>
+                            <h2 class="tutoriel-title" id="ajouter-sous-categorie">Ajouter une sous catégorie</h2>
                             <p class="tutoriel-p"> Pour ajouter une sous catégorie  dans une rubrique: cliquer sur le bouton ajouter une nouvelle catégorie les sous catégorie</p>
                             <img src="{{ asset('image/sous-cat-aff.PNG') }}" alt="accueil" class="col-md-10">
                             <img src="{{ asset('image/site-sous-categorie.PNG') }}" alt="accueil" class="col-md-10">
@@ -108,7 +108,7 @@
 
 
 
-            <div class="tutoriel-item text-center">
+            <div class="tutoriel-item ">
                 <h2 class="" id="demarche">  Les démarches</h2>
                 <p>Les démarches sont regroupées en sous catégories</p>
                 <p>
@@ -149,7 +149,7 @@
                 </p>
           </div>
 
-          <div class="tutoriel-item text-center padding-xl ">
+          <div class="tutoriel-item  padding-xl ">
             <h2 class="h2" id="fournisseur">Les fourniseurs des démarches</h2>
             <p class="tutoriel-p ">Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p class="tutoriel-p">
