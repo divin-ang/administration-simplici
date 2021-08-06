@@ -34,7 +34,7 @@
                             <ul>
                                 <ol> <a href="#afficher-sous-categorie"> Afficher les sous catégories </a></ol>
                                 <ol><a href="#modifier-sous-categorie">Modifier une sous catégorie </a></ol>
-                                <ol><a href="#ajouter-sous-categorie"> Modifier une sous catégorie </a></ol>
+                                <ol><a href="#ajouter-sous-categorie"> Ajouter une sous catégorie </a></ol>
 
                             </ul>
                            
@@ -43,7 +43,7 @@
                             <a href="#demarche h2">Les démarches</a>
                             <ul>
                                 <ol><a href="#afficher-demarche">Afficher les démarches</a></ol>
-                                <ol><a href="#modifier-demarche">Modifier une démarche</a></ol>
+                              
                                 <ol><a href="#creer-demarche">Créer une démarche </a></ol>
                                 <ol><a href="#dupliquer-demarche">Dupliquer une démarche </a></ol>
                                 <ol><a href="#ajouter-un-document">ajouter un document dans une démarche démarche </a></ol>
@@ -52,7 +52,7 @@
                             
                           </ol>
                           <ol>
-                            <a href="#fournisseur h2">Les fournisseurs</a>
+                            <a href="#fournisseur">Les Services</a>
                           </ol>
                       </ul>
                   </div>
@@ -109,9 +109,9 @@
 
 
             <div class="tutoriel-item ">
-                <h2 class="" id="demarche">  Les démarches</h2>
-                <p>Les démarches sont regroupées en sous catégories</p>
-                <p>
+                <h2 class="tutoriel-title" id="demarche">  Les démarches</h2>
+                <p class="tutoriel-p">Les démarches sont regroupées en sous catégories</p>
+                <p class="tutoriel-p">
                     L'administration permet de créer une nouvelle  démarche dans une sous catégorie donnée, de modifier une démarche existante,de supprimer une démarche d'une sous catégorie. Il est également possible de dupliquer une démarche: c'est à dire ajouter une démarche qui existe dans une autre sous catégorie.
                     <ul>
                        <ol>
@@ -121,7 +121,7 @@
                            
                        </ol>
                        <ol>
-                          <h2 class="tutoriel-title" id="Créer-demarche">Ajouter une démarche</h2>
+                          <h2 class="tutoriel-title" id="Creer-demarche">Ajouter une démarche</h2>
                           <p class="tutoriel-p"> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton  créer une nouvelle démarche</p>
                           <img src="{{ asset('image/demarche-page.PNG') }}" alt="accueil" class="col-md-10">
                           <p class="tutoriel-p">Ensuite completer le formulaire et cliquer sur valider.</p>
@@ -130,7 +130,7 @@
                           <img src="{{ asset('image/site-modifier-demarche.png') }}" alt="accueil" class="col-md-10">
                       </ol>
                       <ol>
-                        <h2 class="h3" id="ajouter-document">Ajouter un document dans une démarche</h2>
+                        <h2 class="tutoriel-title" id="ajouter-un-document">Ajouter un document dans une démarche</h2>
                         <p class="tutoriel-p"> Pour ajouter un document à  une démarche: cliquer sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré ajouter un document existant </p>
                         <img src="{{ asset('image/documents.PNG') }}" alt="accueil" class="col-md-10">
                         
@@ -140,7 +140,7 @@
                     </ol>
 
                       <ol>
-                        <h2 class="h2" id="dupliquer-demarche" >Dupliquer une démarche</h2>
+                        <h2 class="tutoriel-title" id="dupliquer-demarche" >Dupliquer une démarche</h2>
                         <p class="tutoriel-p"> Pour dupliquer  une démarche existante dans une sous catégorie: cliquer sur le bouton ajouter créer une démarche existante à cette sous catégorie</p>
                         <img src="{{ asset('image/ajouter-demarche.PNG') }}" alt="accueil" class="col-md-10">
                          <p class="tutoriel-p">Sélectionner une démarche et cliquer sur valider.</p>
@@ -149,16 +149,16 @@
                 </p>
           </div>
 
-          <div class="tutoriel-item  padding-xl ">
-            <h2 class="h2" id="fournisseur">Les fourniseurs des démarches</h2>
+          <div class="tutoriel-item  ">
+            <h2 class="tutoriel-title" id="fournisseur">Les servicess</h2>
             <p class="tutoriel-p ">Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p class="tutoriel-p">
                 L'administration permet de modifier les informations d'un fournisseur.
                 <ul>
                    <ol>
                        <h2 class="tutoriel-title">Creer et modifier les services</h2>
-                       <p class="tutoriel-p"> Pour afficher les services qui fournissent les démarches, sur la page d'accueil cliquer sur les services</p>
-                       <img src="{{ asset('image/afficher-fournisseur.PNG') }}" alt="afficher les demarches" class="col-md-10">
+                       <p class="tutoriel-p"> Pour afficher les services qui fournissent les démarches : sur la page d'accueil cliquer sur les services</p>
+                       <img src="{{ asset('image/afficher-fourniseur.PNG') }}" alt="afficher les demarches" class="col-md-10">
                         
                    </ol>
                    <ol class="padding-xl ">
