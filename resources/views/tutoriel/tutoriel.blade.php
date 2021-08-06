@@ -7,7 +7,7 @@
 <div class="row justify-content-center">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-header h1">Tutoriel</div>
+            <div class="card-header h1" id="entete">Tutoriel</div>
 
             <div class="card-body">
                 @if (session('status'))
@@ -40,7 +40,7 @@
                            
                           </ol>
                           <ol>
-                            <a href="#demarche h2">Les démarches</a>
+                            <a href="#demarche">Les démarches</a>
                             <ul>
                                 <ol><a href="#afficher-demarche">Afficher les démarches</a></ol>
                               
@@ -53,6 +53,9 @@
                           </ol>
                           <ol>
                             <a href="#fournisseur">Les Services</a>
+                          </ol>
+                          <ol>
+                               <a href="#base">Connexion au serveur et à la base des données</a>
                           </ol>
                       </ul>
                   </div>
@@ -176,7 +179,39 @@
                  
                 </ul>
             </p>
+            
       </div>
+
+      <div class="tutoriel-item">
+          <h2 class="tutoriel-title">Connexion au serveur et à a base de données</h2>
+          <p class="tutoriel-p"> pour se connecter à la base de données.
+              <ul>
+                  <ol>
+                    Aller sur le site ovh en cliquant <a href="https://www.ovh.com/fr/">ici</a>
+                  </ol>
+                  <ol>
+                      Vous connecter à compte.
+                  </ol>
+                  <ol>
+                     <p> sur la page d'accueil, cliquer sur l'onglet web cloud sur le menu horizontal en haut de la page.</p>
+                      <img src="{{ asset('image/accueil-ovh.PNG') }}" alt="accueil" class="col-md-10">
+                      <p>sur la page suivante cliquer sur hébergements dans le menu vertical à gauche puis sur le nom de domaine(simpliciplus.fr)</p>
+                      
+                      <img src="{{ asset('image/accueil-ovh2.PNG') }}" alt="accueil" class="col-md-10">
+                      <p>Sur la page suivante cliquer sur Base des données.</p>
+                      <img src="{{ asset('image/accueil-ovh3.PNG') }}" alt="accueil" class="col-md-10">
+                      <p>En suite cliquer sur les 3 points à du nom de la base de données </p>
+                      <img src="{{ asset('image/accueil-ovh4.PNG') }}" alt="accueil" class="col-md-10">
+                      <p>Puis sur PhpMyAdmin, en suite sur la page qui s'ouvre entrer les informations de connexion</p>
+                      <img src="{{ asset('image/accueil-ovh5.PNG') }}" alt="accueil" class="col-md-10">
+
+                  </ol>
+              </ul>
+          </p>
+
+      </div>
+
+      <a href="#entete" style="font-size: 17px;">Remonter en haut de la page</a>
     </div>
 </div>
 </div>
