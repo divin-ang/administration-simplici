@@ -46,6 +46,7 @@
                                 <ol><a href="#modifier-demarche">Modifier une démarche</a></ol>
                                 <ol><a href="#creer-demarche">Créer une démarche </a></ol>
                                 <ol><a href="#dupliquer-demarche">Dupliquer une démarche </a></ol>
+                                <ol><a href="#ajouter-un-document">ajouter un document dans une démarche démarche </a></ol>
 
                             </ul>
                             
@@ -128,6 +129,15 @@
                          
                           <img src="{{ asset('image/site-modifier-demarche.png') }}" alt="accueil" class="col-md-10">
                       </ol>
+                      <ol>
+                        <h2 class="h3" id="ajouter-document">Ajouter un document dans une démarche</h2>
+                        <p> Pour ajouter un document à  une démarche: cliquer sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré ajouter un document existant </p>
+                        <img src="{{ asset('image/document.PNG') }}" alt="accueil" class="col-md-10">
+                        
+                        <img src="{{ asset('image/creer-document.PNG') }}" alt="accueil" class="col-md-10">
+                          <p class="h5">Ensuite completer le formulaire et cliquer sur valider.</p>
+                        <img src="{{ asset('image/documentForm.PNG') }}" alt="accueil" class="col-md-10">
+                    </ol>
 
                       <ol>
                         <h2 class="h2" id="dupliquer-demarche" >Dupliquer une démarche</h2>
@@ -146,14 +156,14 @@
                 L'administration permet de modifier les informations d'un fournisseur.
                 <ul>
                    <ol>
-                       <h2 class="h2">Afficher les fournisseurs</h2>
-                       <p class="padding-xl h5"> Pour afficher les fournisseurs des démarches, sur la page d'accueil cliquer sur les fournisseur des démarches.</p>
+                       <h2 class="h2">Creer et modifier les services</h2>
+                       <p class="padding-xl h5"> Pour afficher les services qui fournissent les démarches, sur la page d'accueil cliquer sur les services</p>
                        <img src="{{ asset('image/afficher-fournisseur.PNG') }}" alt="afficher les demarches" class="col-md-10">
                         
                    </ol>
                    <ol class="padding-xl ">
-                      <h2>Modifier les informations d'un fournisseur </h2>
-                      <p class="padding-xl "> Cliquer sur le bouton modifier à droite du nom du fourniseur.</p>
+                      <h2>Modifier les informations d'un service </h2>
+                      <p class="padding-xl "> Cliquer sur le bouton modifier à droite du nom du service.</p>
                       <img src="{{ asset('image/liste-fourniseur.PNG') }}" alt="accueil" class="col-md-10 ">
                       <p class="padding-xl ">Ensuite completer le formulaire en pretant une attention aux champs horaires. <br>
                     les plages horaires de chaque jour sont séparés par des point-virgule (;), Vous pouver ajouter du texte en le mettant entre guillemets. <br>
