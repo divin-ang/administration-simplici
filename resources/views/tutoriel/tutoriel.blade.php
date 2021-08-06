@@ -33,7 +33,7 @@
                             <a href="#sous-categorie">Les sous catégories</a>
                             <ul>
                                 <ol> <a href="#afficher-sous-categorie"> Afficher les sous catégories </a></ol>
-                                <ol><a href="#modifier-sous-categorie">Modifier une sous catégorie </a></ol>
+                            
                                 <ol><a href="#ajouter-sous-categorie"> Ajouter une sous catégorie </a></ol>
 
                             </ul>
@@ -90,7 +90,7 @@
                       L'administration permet d'ajouter une sous catégorie à une rubrique, de modifier le nom d'une sous catégorie existante ou encore de supprimer la sous catégories.
                       <ul>
                          <ol>
-                             <h2  id="afficher-sous-categorie">Afficher les sous catégorie.</h2>
+                             <h2  id="afficher-sous-categorie" class="tutoriel-title">Afficher les sous catégorie.</h2>
                              <p> Pour afficher les sous catégories d'une rubrique: cliquer sur le bouton afficher les sous catégorie à droite du nom de la rubrique.</p>
                              <img src="{{ asset('image/afficher-sous-categorie.png') }}" alt="accueil" class="col-md-10">
                             
@@ -121,7 +121,7 @@
                            
                        </ol>
                        <ol>
-                          <h2 class="tutoriel-title" id="Creer-demarche">Ajouter une démarche</h2>
+                          <h2 class="tutoriel-title" id="creer-demarche">Ajouter une démarche</h2>
                           <p class="tutoriel-p"> Pour ajouter une démarche  dans une sous catégorie: cliquer sur le bouton  créer une nouvelle démarche</p>
                           <img src="{{ asset('image/demarche-page.PNG') }}" alt="accueil" class="col-md-10">
                           <p class="tutoriel-p">Ensuite completer le formulaire et cliquer sur valider.</p>
