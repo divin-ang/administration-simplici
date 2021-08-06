@@ -132,11 +132,11 @@
                       <ol>
                         <h2 class="h3" id="ajouter-document">Ajouter un document dans une démarche</h2>
                         <p> Pour ajouter un document à  une démarche: cliquer sur le bouton documents à droite du nom de démarche, sur la page qui s'affiche, vous avez la possibilité de créer un nouveau document ou si le document que vous souhaiter ajouter est déjà enregistré ajouter un document existant </p>
-                        <img src="{{ asset('image/document.PNG') }}" alt="accueil" class="col-md-10">
+                        <img src="{{ asset('image/documents.PNG') }}" alt="accueil" class="col-md-10">
                         
                         <img src="{{ asset('image/creer-document.PNG') }}" alt="accueil" class="col-md-10">
                           <p class="h5">Ensuite completer le formulaire et cliquer sur valider.</p>
-                        <img src="{{ asset('image/documentForm.PNG') }}" alt="accueil" class="col-md-10">
+                        <img src="{{ asset('image/document-form.PNG') }}" alt="accueil" class="col-md-10">
                     </ol>
 
                       <ol>
