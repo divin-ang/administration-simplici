@@ -35,5 +35,14 @@
      margin-left: 5%;
 }
 .tutoriel-title{
-    color:red;
+   font-size: 18px;
+}
+.tutoriel-plan{
+    font-size: 17px;
+}
+
+.tutoriel-item{
+    font-size: 17px;
+    margin-top: 5%;
+    
 }

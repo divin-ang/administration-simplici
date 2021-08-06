@@ -24,7 +24,7 @@
 
 
                   <div>
-                      <ul>
+                      <ul class="tutoriel-plan">
                           <ol>
                             <a href="#categorie">Les catégories</a>
                             
@@ -56,7 +56,7 @@
                           </ol>
                       </ul>
                   </div>
-                <div class="item text-center">
+                <div class="tutoriel-item text-center">
                 <div> 
                     <h2 class="tutoriel-title h2" id="categorie">Modifier une catégorie</h2>
                     <p>Les catégories correspondent aux rubriques de la page d'accueil. <br>
@@ -83,7 +83,7 @@
                 
                 </div>
             </div>
-            <div class="item text-center">
+            <div class="tutoriel-item text-center">
                   <h2 class="h2" id="sous-categorie">  Les sous catégories.</h2>
                   <p>Chaque rubrique de la page d'accueil est composée des sous catégories elles mêmes contenant les démarches.</p>
                   <p>
@@ -108,7 +108,7 @@
 
 
 
-            <div class="item text-center">
+            <div class="tutoriel-item text-center">
                 <h2 class="h2" id="demarche">  Les démarches</h2>
                 <p>Les démarches sont regroupées en sous catégories</p>
                 <p>
@@ -149,7 +149,7 @@
                 </p>
           </div>
 
-          <div class="item text-center padding-xl ">
+          <div class="tutoriel-item text-center padding-xl ">
             <h2 class="h2" id="fournisseur">Les fourniseurs des démarches</h2>
             <p class="padding-xl ">Sont appéllés ici fournisseur les administrations d'où proviennent les démarches (Ville de chambéry, Grand Chambéry, CCAS, etc.</p>
             <p>
